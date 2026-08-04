@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <div className="bg-white">
-      <section className="mx-auto max-w-[1400px] px-12 pb-16 pt-[120px]">
+      <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-16 pt-24 lg:pt-[120px]">
         <div className="mb-5 flex items-center gap-2.5">
           <span className="h-px w-7 bg-brand" />
           <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Real Work</span>
@@ -27,7 +27,7 @@ export default function PortfolioPage() {
 
       <PortfolioGallery />
 
-      <section className="w-full bg-cream px-12 py-[120px] text-center">
+      <section className="w-full bg-cream px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px] text-center">
         <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light text-ink">
           See something close to what you want?
         </h2>

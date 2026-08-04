@@ -18,11 +18,31 @@ export const proofItems: ProofItem[] = [
 export type ProcessStep = { n: string; title: string; desc: string };
 
 export const processSteps: ProcessStep[] = [
-  { n: "01", title: "Consultation", desc: "We visit the space (or start over a call), talk through what you want the wall or room to do, and take measurements." },
-  { n: "02", title: "Design & Quote", desc: "We put together a design direction and a clear quote — materials, finish, and timeline, no surprises later." },
-  { n: "03", title: "Sign-off", desc: "You approve the design and quote, we schedule the install date and confirm materials." },
-  { n: "04", title: "Installation", desc: "Our team installs on-site, working cleanly and to the agreed timeline." },
-  { n: "05", title: "Final Walkthrough", desc: "We walk the finished space with you, and hand over care instructions for the new finish." },
+  {
+    n: "01",
+    title: "On-Site Consultation",
+    desc: "Our process begins with a comprehensive on-site consultation, where we meet with the client to gain a clear understanding of their vision, requirements, and project objectives. During this visit, we take accurate measurements, assess the space, and present relevant material and finish samples to help guide the design direction.",
+  },
+  {
+    n: "02",
+    title: "3D Design Rendering (Optional)",
+    desc: "For clients who would like to visualize their project before installation, we offer professional 3D design renderings. This optional service is particularly recommended for projects such as kitchens, walk-in closets, and other bespoke interior installations, allowing clients to review and refine the design prior to execution.",
+  },
+  {
+    n: "03",
+    title: "Quotation",
+    desc: "Once the project scope and design requirements have been finalized, we prepare and submit a detailed quotation outlining the agreed specifications, scope of work, and associated costs.",
+  },
+  {
+    n: "04",
+    title: "On-Site Installation",
+    desc: "Upon approval of the quotation, our experienced installation team carries out the project with precision, professionalism, and meticulous attention to detail, ensuring the highest standards of workmanship throughout the installation process.",
+  },
+  {
+    n: "05",
+    title: "Quality Inspection and Project Sign-Off",
+    desc: "Following completion of the installation, a thorough quality inspection is conducted to ensure every aspect of the project meets our stringent quality standards and the client's expectations. The project is then formally signed off once the client is fully satisfied with the final outcome.",
+  },
 ];
 
 export type Testimonial = { id: string; quote: string; name: string; role: string };
@@ -50,7 +70,7 @@ export type MaterialCard = { href: string; label: string; src: string };
 export const exploreMaterialCards: MaterialCard[] = [
   { href: "/materials/wall-frame-moulding", label: "Wall Frame Moulding", src: "/uploads/catalogue-wallframe-5.jpg" },
   { href: "/materials/accent-wall", label: "Accent Wall", src: "/uploads/catalogue-accentwall-3.jpg" },
-  { href: "/materials/pvc-panels", label: "PVC Panels", src: "/uploads/catalogue-pvc-2.jpg" },
+  { href: "/materials/pvc-panels", label: "PVC Panels", src: "/uploads/pvc-grey-black.jpeg" },
   { href: "/materials/wallpaper", label: "Wallpaper", src: "/uploads/catalogue-wallpaper-3.jpg" },
   { href: "/materials/kitchen-unit", label: "Kitchen Unit & Cabinetry", src: "/uploads/catalogue-general-3.jpg" },
   { href: "/materials/pu-stone", label: "PU Stone", src: "/uploads/catalogue-pustone-6.jpg" },
@@ -59,7 +79,7 @@ export const exploreMaterialCards: MaterialCard[] = [
 export type Reel = { id: string; src: string; caption?: string };
 
 export const reels: Reel[] = [
-  { id: "reel-1", src: "/uploads/reel-1.mp4" },
-  { id: "reel-2", src: "/uploads/reel-2.mp4" },
-  { id: "reel-3", src: "/uploads/reel-3-dstv.mp4", caption: "DStv Home Channel" },
+  { id: "reel-wardrobe-install", src: "/uploads/reel-wardrobe-install.mp4", caption: "Wardrobe Unit Installation" },
+  { id: "reel-dont-move-1", src: "/uploads/reel-dont-move-1.mp4" },
+  { id: "reel-dont-move-2", src: "/uploads/reel-dont-move-2.mp4" },
 ];

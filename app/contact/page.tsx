@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="mx-auto grid max-w-[1400px] grid-cols-1 gap-16 px-12 pb-20 pt-[120px] lg:grid-cols-2">
+    <section className="mx-auto grid max-w-[1400px] grid-cols-1 gap-16 px-5 sm:px-8 lg:px-12 pb-20 pt-24 lg:pt-[120px] lg:grid-cols-2">
       <div>
         <div className="mb-5 flex items-center gap-2.5">
           <span className="h-px w-7 bg-brand" />

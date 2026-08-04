@@ -13,7 +13,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-near-black font-poppins">
-      <div className="relative z-10 mx-auto max-w-[1400px] px-12 pb-10 pt-24">
+      <div className="relative z-10 mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-10 pt-24">
         <div className="mb-16 flex flex-wrap justify-between gap-16">
           <div className="max-w-[420px] min-w-[280px] flex-1">
             <Image
@@ -24,7 +24,7 @@ export function Footer() {
               className="mb-6 block h-[38px] w-auto"
             />
             <p className="m-0 text-[13px] leading-[1.7] text-[#B5B0AA]">
-              Wall moulding, accent walls, shop fitting, wall decor, and bespoke interior design &amp; redesign — Pretoria and Durban.
+              Don&apos;t move&hellip; twinx it.
             </p>
           </div>
 

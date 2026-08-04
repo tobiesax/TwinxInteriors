@@ -16,7 +16,7 @@ export function Testimonials() {
   const active = testimonials[index];
 
   return (
-    <section className="relative border-t border-black/[0.06] bg-white px-12 py-[120px]">
+    <section className="relative border-t border-black/[0.06] bg-white px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[800px] text-center">
         <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">What Clients Say</div>
         <div className="flex min-h-[180px] items-center justify-center">

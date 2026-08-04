@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <ProofGallery />
 
-      <section id="how-we-work" className="relative border-y border-black/[0.06] bg-white px-12 py-[120px]">
+      <section id="how-we-work" className="relative border-y border-black/[0.06] bg-white px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
             Our Design Process
@@ -41,7 +41,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-12 py-11 text-center">
+      <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-5 sm:px-8 lg:px-12 py-11 text-center">
         <div className="font-poppins text-lg font-semibold text-ink">Know your process. Ready for your quote?</div>
         <FlowButton href="/contact" variant="solid" size="sm">
           Get a Project Quote
@@ -50,7 +50,7 @@ export default function HomePage() {
 
       <ExploreMaterials />
 
-      <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-12 py-11">
+      <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-5 sm:px-8 lg:px-12 py-11">
         <div className="font-poppins text-lg font-semibold text-ink">Found the material for your space?</div>
         <FlowButton href="/contact" variant="solid" size="sm">
           Request a Quote
@@ -63,7 +63,7 @@ export default function HomePage() {
 
       <Testimonials />
 
-      <section className="relative border-t border-black/[0.06] bg-cream px-12 py-[130px] text-center">
+      <section className="relative border-t border-black/[0.06] bg-cream px-5 sm:px-8 lg:px-12 py-16 lg:py-[130px] text-center">
         <Reveal>
           <h2 className="m-0 mb-5 font-jost text-[clamp(34px,5vw,58px)] font-light leading-[1.08] text-ink">
             Ready to see what your space could be?

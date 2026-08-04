@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 
 export function ExploreMaterials() {
   return (
-    <section className="relative border-t border-black/[0.06] bg-white px-12 py-[120px]">
+    <section className="relative border-t border-black/[0.06] bg-white px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Explore Materials</div>
         <h2 className="m-0 mb-14 max-w-[640px] font-jost text-[clamp(30px,4vw,46px)] font-light leading-[1.1] text-ink">
@@ -29,7 +29,7 @@ export function ExploreMaterials() {
               <div className="pointer-events-none absolute bottom-5 left-[22px] font-poppins text-[19px] font-bold">
                 {card.label}
               </div>
-              <div className="pointer-events-none absolute right-5 top-[18px] flex h-[38px] w-[38px] rotate-[-45deg] items-center justify-center rounded-full bg-white/[0.18] text-[22px] font-bold text-ink backdrop-blur-[6px] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.12]">
+              <div className="pointer-events-none absolute right-5 top-[18px] flex h-[38px] w-[38px] rotate-[-45deg] items-center justify-center rounded-full bg-white/[0.18] text-[22px] font-bold text-brand backdrop-blur-[6px] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.12]">
                 →
               </div>
             </Link>

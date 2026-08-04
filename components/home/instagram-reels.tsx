@@ -44,7 +44,7 @@ function ReelTile({ src, caption }: { src: string; caption?: string }) {
 
 export function InstagramReels() {
   return (
-    <section className="relative px-12 py-[120px]">
+    <section className="relative px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
           <div>

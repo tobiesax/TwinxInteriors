@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState } from "react";
+import { submitQuoteRequest, type SubmitQuoteState } from "@/app/contact/actions";
 
 const pvcColors = ["Black W61", "Marble W78", "Blue W75", "Charcoal W73", "Light Grey W62", "Oak Brown W34"];
 
@@ -14,10 +15,12 @@ const inputClasses =
 
 const checkboxLabelClasses = "flex cursor-pointer items-center gap-2.5 text-sm text-ink";
 
-export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+const initialState: SubmitQuoteState = { status: "idle" };
 
-  if (submitted) {
+export function ContactForm() {
+  const [state, formAction, pending] = useActionState(submitQuoteRequest, initialState);
+
+  if (state.status === "success") {
     return (
       <div className="flex h-fit flex-col gap-4 rounded-[3px] border border-black/[0.06] bg-cream-2 p-10">
         <div className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Thank You</div>
@@ -31,36 +34,37 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
-      className="flex h-fit flex-col gap-7 rounded-[3px] border border-black/[0.06] bg-cream-2 p-10"
-    >
+    <form action={formAction} className="flex h-fit flex-col gap-7 rounded-[3px] border border-black/[0.06] bg-cream-2 p-10">
       <div className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Request a Quote</div>
+
+      {state.status === "error" && state.message && (
+        <div className="rounded-[3px] border border-brand/30 bg-brand/5 px-4 py-3 text-sm text-brand">
+          {state.message}
+        </div>
+      )}
 
       <div>
         <div className="mb-2.5 text-xs font-semibold uppercase tracking-[0.08em] text-muted">Name</div>
         <div className="grid grid-cols-2 gap-4">
-          <input placeholder="First" className={inputClasses} />
-          <input placeholder="Last" className={inputClasses} />
+          <input name="firstName" required placeholder="First" className={inputClasses} />
+          <input name="lastName" placeholder="Last" className={inputClasses} />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <input placeholder="Phone" className={inputClasses} />
-        <input placeholder="Email" type="email" className={inputClasses} />
+        <input name="phone" required placeholder="Phone" className={inputClasses} />
+        <input name="email" placeholder="Email" type="email" className={inputClasses} />
       </div>
 
       <div>
         <div className="mb-4 text-[13px] font-bold uppercase tracking-[0.1em] text-brand">Wall Design Option</div>
         <div className="flex flex-col gap-[18px]">
           <label className={checkboxLabelClasses}>
-            <input type="checkbox" className="h-4 w-4 accent-brand" /> Wall Frame Moulding
+            <input type="checkbox" name="wallDesignOptions" value="Wall Frame Moulding" className="h-4 w-4 accent-brand" /> Wall
+            Frame Moulding
           </label>
           <label className={checkboxLabelClasses}>
-            <input type="checkbox" className="h-4 w-4 accent-brand" /> Accent Wall
+            <input type="checkbox" name="wallDesignOptions" value="Accent Wall" className="h-4 w-4 accent-brand" /> Accent Wall
           </label>
 
           <div>
@@ -68,7 +72,8 @@ export function ContactForm() {
             <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pl-1">
               {pvcColors.map((c) => (
                 <label key={c} className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
-                  <input type="checkbox" className="h-[15px] w-[15px] accent-brand" /> {c}
+                  <input type="checkbox" name="wallDesignOptions" value={`PVC — ${c}`} className="h-[15px] w-[15px] accent-brand" />{" "}
+                  {c}
                 </label>
               ))}
             </div>
@@ -79,7 +84,13 @@ export function ContactForm() {
             <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pl-1 sm:grid-cols-3">
               {wallpaperCodes.map((code, i) => (
                 <label key={`${code}-${i}`} className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
-                  <input type="checkbox" className="h-[15px] w-[15px] accent-brand" /> {code}
+                  <input
+                    type="checkbox"
+                    name="wallDesignOptions"
+                    value={`Wallpaper — ${code}`}
+                    className="h-[15px] w-[15px] accent-brand"
+                  />{" "}
+                  {code}
                 </label>
               ))}
             </div>
@@ -89,16 +100,27 @@ export function ContactForm() {
             <div className="mb-2.5 text-sm font-bold text-ink">PU Stone</div>
             <div className="pl-1">
               <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
-                <input type="checkbox" className="h-[15px] w-[15px] accent-brand" /> Black PU Stone
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Black PU Stone"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Black PU Stone
               </label>
             </div>
           </div>
         </div>
       </div>
 
-      <input placeholder="Wall size (Height x Width)" className={inputClasses} />
-      <textarea placeholder="Give us a brief description of your wall" rows={4} className={`${inputClasses} resize-y`} />
-      <input placeholder="Installation address" className={inputClasses} />
+      <input name="wallSize" placeholder="Wall size (Height x Width)" className={inputClasses} />
+      <textarea
+        name="description"
+        placeholder="Give us a brief description of your wall"
+        rows={4}
+        className={`${inputClasses} resize-y`}
+      />
+      <input name="address" placeholder="Installation address" className={inputClasses} />
       <input
         type="text"
         name="hp-field"
@@ -109,9 +131,10 @@ export function ContactForm() {
       />
       <button
         type="submit"
-        className="cursor-pointer rounded-[3px] border-none bg-brand px-[34px] py-4 font-jost text-[15px] font-bold text-white transition-colors duration-200 hover:bg-brand-dark"
+        disabled={pending}
+        className="cursor-pointer rounded-[3px] border-none bg-brand px-[34px] py-4 font-jost text-[15px] font-bold text-white transition-colors duration-200 hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-60"
       >
-        Submit
+        {pending ? "Sending…" : "Submit"}
       </button>
     </form>
   );

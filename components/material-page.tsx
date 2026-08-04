@@ -56,7 +56,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
   return (
     <div>
       {/* Hero */}
-      <section className="relative flex min-h-[56vh] items-end px-12 pb-[72px]">
+      <section className="relative flex min-h-[56vh] items-end px-5 sm:px-8 lg:px-12 pb-[72px]">
         <div className="absolute inset-0 z-0">
           <Image src={data.heroSrc} alt={data.title} fill priority className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05)_0%,rgba(0,0,0,0.15)_55%,rgba(0,0,0,0.55)_100%)]" />
@@ -85,7 +85,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       </section>
 
       {/* Description */}
-      <section className="mx-auto flex max-w-[1400px] flex-wrap justify-between gap-10 px-12 pt-16">
+      <section className="mx-auto flex max-w-[1400px] flex-wrap justify-between gap-10 px-5 sm:px-8 lg:px-12 pt-16">
         <p className="m-0 max-w-[640px] text-[17px] leading-[1.8] text-muted">{data.description}</p>
         {data.statLine && (
           <span className="h-fit whitespace-nowrap rounded-full border border-black/10 px-3.5 py-1.5 text-xs font-semibold text-ink">
@@ -96,7 +96,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Gallery */}
       {data.gallery.length > 0 && (
-        <section className="mx-auto max-w-[1400px] px-12 pt-14">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-14">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {data.gallery.map((item, i) => (
               <div
@@ -145,8 +145,8 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Mid CTA */}
       {data.midCtaHeading && (
-        <section className="mx-auto max-w-[1400px] px-12 pt-16">
-          <div className="flex flex-wrap items-center justify-between gap-6 rounded-[3px] bg-cream p-10 sm:px-12">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-16">
+          <div className="flex flex-wrap items-center justify-between gap-6 rounded-[3px] bg-cream p-6 sm:p-10">
             <h3 className="m-0 font-poppins text-xl font-bold text-ink">{data.midCtaHeading}</h3>
             <div className="flex flex-wrap gap-3.5">
               <SolidButton href="/contact" size="md">
@@ -162,7 +162,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Swatches */}
       {data.swatches && data.swatches.length > 0 && (
-        <section className="mx-auto max-w-[1400px] px-12 pt-24">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-24">
           <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Material Swatches</div>
           <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">2025 sample sheet</h2>
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
@@ -190,7 +190,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Intro sections */}
       {data.introSections?.map((xs, i) => (
-        <section key={i} className="mx-auto max-w-[1400px] px-12 pb-20">
+        <section key={i} className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20">
           <div className="grid grid-cols-1 items-start gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
             <div>
               <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{xs.eyebrow}</div>
@@ -219,7 +219,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Design cards */}
       {data.designCards && data.designCards.length > 0 && (
-        <section className="mx-auto max-w-[1400px] px-12 pb-20 pt-24">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20 pt-24">
           <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
             {data.designCardsEyebrow ?? "Design Styles"}
           </div>
@@ -252,7 +252,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Extra sections */}
       {data.extraSections?.map((xs, i) => (
-        <section key={i} className="mx-auto max-w-[1400px] px-12 pb-20">
+        <section key={i} className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20">
           {xs.imageSrc ? (
             <div className="grid grid-cols-1 items-center gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
               <div className="relative h-[400px] overflow-hidden rounded-[3px]">
@@ -294,7 +294,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Carousel */}
       {n > 0 && data.carouselImages && (
-        <section className="mx-auto max-w-[1400px] px-12 pb-20">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20">
           <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
             {data.carouselEyebrow ?? "Finish Reference"}
           </div>
@@ -340,7 +340,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Catalogue download */}
       {data.catalogueHref && (
-        <section className="mx-auto max-w-[1400px] px-12 pb-24">
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-24">
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-black/[0.08] pt-10">
             <div>
               <div className="mb-2.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Full Reference</div>
@@ -360,7 +360,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       )}
 
       {/* Closing CTA */}
-      <section className="w-full bg-cream px-12 py-32 text-center">
+      <section className="w-full bg-cream px-5 sm:px-8 lg:px-12 py-16 text-center lg:py-32">
         <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light text-ink">
           Ready to talk through {data.title.toLowerCase()}?
         </h2>

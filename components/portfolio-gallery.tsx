@@ -13,7 +13,7 @@ export function PortfolioGallery() {
   const activeItem = activeIndex >= 0 ? allItems[activeIndex] : null;
 
   return (
-    <section className="mx-auto max-w-[1400px] px-12 pb-10">
+    <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-10">
       {portfolioCategories.map((cat) => (
         <div key={cat.key} className="mb-20 last:mb-0">
           <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.1em] text-muted-2">{cat.heading}</div>
