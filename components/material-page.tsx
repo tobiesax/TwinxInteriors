@@ -163,8 +163,12 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       {/* Swatches */}
       {data.swatches && data.swatches.length > 0 && (
         <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-24">
-          <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Material Swatches</div>
-          <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">2025 sample sheet</h2>
+          <div className={data.hideSwatchesHeading ? "mb-10 text-[13px] font-bold uppercase tracking-[0.14em] text-brand" : "mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand"}>
+            Material Swatches
+          </div>
+          {!data.hideSwatchesHeading && (
+            <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">2025 sample sheet</h2>
+          )}
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
             {data.swatches.map((sw, i) => (
               <div

@@ -27,6 +27,7 @@ export type MaterialData = {
   introSections?: TextSection[];
   extraSections?: TextSection[];
   swatches?: Swatch[];
+  hideSwatchesHeading?: boolean;
   carouselImages?: CarouselImage[];
   carouselEyebrow?: string;
   catalogueHref?: string;
@@ -271,6 +272,7 @@ export const materials: MaterialData[] = [
         ],
       },
     ],
+    hideSwatchesHeading: true,
     swatches: [
       { id: "wp-sw-1", code: "09C9702", name: "", src: "/uploads/09C9702.jpeg" },
       { id: "wp-sw-2", code: "11C1001", name: "", src: "/uploads/11C1001.jpeg" },

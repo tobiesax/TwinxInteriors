@@ -90,7 +90,7 @@ export function Nav() {
                 isMaterials ? "text-ink" : "text-muted-2 hover:text-ink"
               }`}
             >
-              Materials{" "}
+              Our Services{" "}
               <span
                 className="inline-block text-[11px] transition-transform duration-[250ms] ease-in-out"
                 style={{ transform: materialsOpen ? "rotate(180deg)" : "rotate(0deg)" }}
@@ -163,7 +163,7 @@ export function Nav() {
               onClick={() => setMobileMaterialsOpen((v) => !v)}
               className={`flex items-center justify-between py-3 text-base font-semibold uppercase ${isMaterials ? "text-ink" : "text-muted-2"}`}
             >
-              Materials
+              Our Services
               <span
                 className="text-xs transition-transform duration-200"
                 style={{ transform: mobileMaterialsOpen ? "rotate(180deg)" : "rotate(0deg)" }}
