@@ -17,16 +17,16 @@ export function PortfolioGallery() {
       {portfolioCategories.map((cat) => (
         <div key={cat.key} className="mb-20 last:mb-0">
           <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.1em] text-muted-2">{cat.heading}</div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
             {cat.items.map((item) => (
               <div key={item.id} onClick={() => setActiveId(item.id)} className="group cursor-pointer">
-                <div className="relative h-[280px] overflow-hidden rounded-[3px]">
+                <div className="relative h-[320px] overflow-hidden rounded-[3px] sm:h-[260px] lg:h-[280px]">
                   <Image
                     src={item.src}
                     alt={item.label}
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <div className="mt-2.5 text-[13px] text-muted">{item.label}</div>
