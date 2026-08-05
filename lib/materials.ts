@@ -176,11 +176,14 @@ export const materials: MaterialData[] = [
       {
         eyebrow: "Hand Crafted, Elegant & Unique",
         heading: "Fluted panelling that fits any space, any style",
+        imageId: "pvc-about-1",
+        imageSrc: "/uploads/catalogue-pvc-4.jpg",
         paragraphs: [
-          "Our PVC fluted panels are panels with linear designs made of engineered composites with a natural wood finish. This gives them the appearance and texture of natural wood while also being water resistant, termite and mould repellent. Low maintenance, eco-friendly and durable, they're a fit for residential and commercial panelling and feature walls.",
-          "Each panel comes in a 17cm × 2.9m size, in a variety of colours, and can also be painted to any colour.",
-          "A simple fluted wall panel can be used to add focus to a bedroom or to create an interesting living room wall design in a home, or to attract visitors to a reception in a hotel or office space.",
-          "Fluted panels are an eco-friendly alternative to traditional wood panels in interior design. They fit well into a minimalist, contemporary or Scandinavian design style, and can be used in all spaces — a modern home office, a contemporary kitchen, a modern restaurant, or a Scandinavian boutique hotel. The panels provide designers and homeowners with an elegant looking space that comes together easily.",
+          "Linear, fluted panels made of engineered composites with a natural wood finish — the look and texture of real wood, without the upkeep.",
+          "Water & moisture resistant — repels water, termites and mould, with none of the maintenance real wood needs.",
+          "Sized to fit — each panel measures 17cm × 2.9m, in a range of colours, or paint to match any palette.",
+          "Anywhere it counts — a bedroom feature wall, a considered living room design, or a reception that makes a first impression.",
+          "Any style — fits minimalist, contemporary and Scandinavian interiors, from a home office to a boutique hotel.",
         ],
       },
       {
