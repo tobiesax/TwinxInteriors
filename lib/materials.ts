@@ -306,7 +306,7 @@ export const materials: MaterialData[] = [
     heroCta: true,
     statLine: "Custom-built, made to fit",
     gallery: [
-      { id: "ku-1", label: "Kitchen island, gloss white cabinetry", src: "/uploads/beautiful-kitchen-interior-design.jpg" },
+      { id: "ku-1", label: "Home bar cabinetry with backlit shelving", src: "/uploads/ku-home-bar.jpg" },
       { id: "ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg" },
       { id: "ku-3", label: "Fluted cabinetry panel with sphere accent", src: "/uploads/catalogue-general-2.jpg" },
       { id: "ku-4", label: "Walk-in wardrobe cabinetry, lit display shelving", src: "/uploads/ku-wardrobe-lit-shelving.jpg" },
