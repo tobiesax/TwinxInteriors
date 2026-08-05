@@ -42,9 +42,9 @@ export default function HomePage() {
       </section>
 
       <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-5 sm:px-8 lg:px-12 py-11 text-center">
-        <div className="font-poppins text-lg font-semibold text-ink">Know your process. Ready for your quote?</div>
+        <div className="font-poppins text-lg font-semibold text-ink">Don&apos;t move&hellip; twinx it.</div>
         <FlowButton href="/contact" variant="solid" size="sm">
-          Get a Project Quote
+          Request a Quote
         </FlowButton>
       </section>
 

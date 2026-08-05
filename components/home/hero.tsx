@@ -39,18 +39,12 @@ export function Hero() {
 
       <div className="relative z-[2] mx-auto flex w-full max-w-[1400px] flex-wrap items-start justify-between gap-8">
         <div className="min-w-0 max-w-[520px] flex-1 sm:min-w-[380px]">
-          <div className="mb-4 flex items-center gap-2.5 lg:mb-6">
-            <span className="h-px w-7 bg-white" />
-            <span className="text-[13px] uppercase tracking-[0.14em] text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.4)]">
-              Pretoria &amp; Durban
-            </span>
-          </div>
           <h1 className="m-0 mb-4 font-jost text-[clamp(30px,4.2vw,50px)] font-light uppercase leading-[1.15] text-white [text-shadow:0_1px_10px_rgba(0,0,0,0.3)] lg:mb-5 lg:leading-[1.1]">
             Interiors, built for spaces that refuse to be ordinary.
           </h1>
           <p className="m-0 mb-6 max-w-[460px] text-sm leading-[1.6] text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.3)] lg:mb-8">
-            Every space tells a story before a word is said. Twinx shapes that story — wall moulding, feature walls,
-            and full room redesigns across South Africa.
+            Every space tells a story before a word is said. Twinx shapes that story — unique wall decor and
+            cabinetry, and full room redesigns across South Africa.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-3.5">
             <SolidButton href="/contact" size="lg">

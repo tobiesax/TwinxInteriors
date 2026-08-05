@@ -68,8 +68,8 @@ export const clientLogos: ClientLogo[] = [
 export type MaterialCard = { href: string; label: string; src: string };
 
 export const exploreMaterialCards: MaterialCard[] = [
-  { href: "/materials/wall-frame-moulding", label: "Wall Frame Moulding", src: "/uploads/catalogue-wallframe-5.jpg" },
-  { href: "/materials/accent-wall", label: "Accent Wall", src: "/uploads/catalogue-accentwall-3.jpg" },
+  { href: "/materials/wall-frame-moulding", label: "Wall Frame Moulding", src: "/uploads/catalogue-accentwall-3.jpg" },
+  { href: "/materials/accent-wall", label: "Accent Wall", src: "/uploads/catalogue-wallframe-5.jpg" },
   { href: "/materials/pvc-panels", label: "PVC Panels", src: "/uploads/pvc-grey-black.jpeg" },
   { href: "/materials/wallpaper", label: "Wallpaper", src: "/uploads/catalogue-wallpaper-3.jpg" },
   { href: "/materials/kitchen-unit", label: "Kitchen Unit & Cabinetry", src: "/uploads/catalogue-general-3.jpg" },
