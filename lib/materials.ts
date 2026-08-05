@@ -171,7 +171,6 @@ export const materials: MaterialData[] = [
       { id: "pvc-install-1", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg" },
       { id: "pvc-install-2", label: "Fluted panel with pendant lighting", src: "/uploads/catalogue-pvc-1.jpg" },
       { id: "pvc-install-3", label: "Fluted panel, side-table vignette", src: "/uploads/catalogue-pvc-3.jpg" },
-      { id: "pvc-install-4", label: "Fluted panel with warm-lit shelf", src: "/uploads/catalogue-pvc-4.jpg" },
     ],
     extraSections: [
       {
@@ -360,7 +359,7 @@ export const materials: MaterialData[] = [
         eyebrow: "Advantages of PU Stone",
         heading: "Why clients choose it over natural stone",
         imageId: "pu-about-advantages",
-        imageSrc: "/uploads/catalogue-pustone-2.jpg",
+        imageSrc: "/uploads/catalogue-pustone-3.jpg",
         paragraphs: [
           "High durability — a highly durable material, resistant to wear and tear, guaranteed to stay beautiful for years to come.",
           "Versatility — can be designed to mimic the look of natural stone, marble, granite, or even wood.",
