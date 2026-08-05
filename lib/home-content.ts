@@ -71,7 +71,7 @@ export const exploreMaterialCards: MaterialCard[] = [
   { href: "/materials/pvc-panels", label: "PVC Panels", src: "/uploads/catalogue-pvc-2.jpg" },
   { href: "/materials/wallpaper", label: "Wallpaper", src: "/uploads/catalogue-wallpaper-3.jpg" },
   { href: "/materials/kitchen-unit", label: "Kitchen Unit & Cabinetry", src: "/uploads/beautiful-kitchen-interior-design.jpg" },
-  { href: "/materials/pu-stone", label: "PU Stone", src: "/uploads/catalogue-pustone-6.jpg" },
+  { href: "/materials/pu-stone", label: "PU Stone", src: "/uploads/catalogue-pustone-4.jpg" },
 ];
 
 export type Reel = { id: string; src: string; caption?: string };
