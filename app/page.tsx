@@ -71,7 +71,7 @@ export default function HomePage() {
           <p className="m-0 mb-10 text-[17px] text-muted">Tell us about the space — we&apos;ll come back with a quote.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <SolidButton href="/contact" size="lg">
-              Get a Project Quote
+              Request a Quote
             </SolidButton>
             <FlowButton href="https://wa.me/27120040919" variant="outline-light" size="lg" external>
               Chat on WhatsApp

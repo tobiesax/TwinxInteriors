@@ -21,7 +21,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://twinx-interiors.vercel.app"),
   title: {
-    default: "Twinx Interiors — Wall Moulding, Feature Walls & Interior Redesign",
+    default: "Twinx Interiors — Unique Walls and Interior Design",
     template: "%s | Twinx Interiors",
   },
   description:
