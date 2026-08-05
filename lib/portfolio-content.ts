@@ -32,7 +32,7 @@ export const portfolioCategories: PortfolioCategory[] = [
     key: "media-walls",
     heading: "TV & Media Walls",
     items: [
-      { id: "pf-mw-1", label: "Home bar cabinetry, marble counter", src: "/uploads/IMG_0425.jpg" },
+      { id: "pf-mw-1", label: "Home bar cabinetry", src: "/uploads/IMG_0425.jpg" },
       { id: "pf-mw-2", label: "TV wall unit, white gloss finish", src: "/uploads/IMG_7561.jpg" },
     ],
   },

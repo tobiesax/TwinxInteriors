@@ -127,8 +127,8 @@ export const materials: MaterialData[] = [
     ],
     designCardsEyebrow: "Pattern Options",
     designCards: [
-      { id: "aw-style-dowel", title: "Dowel Pattern", desc: "Vertical dowel rods in a repeating rhythm, a graphic, tactile texture for a living or dining wall.", src: "/uploads/catalogue-accentwall-2.jpg" },
-      { id: "aw-style-3d", title: "Geometric 3D Panel", desc: "Faceted 3D panelling that catches light differently at every angle, ideal for stairwells and hallways.", src: "/uploads/catalogue-accentwall-3.jpg" },
+      { id: "aw-style-dowel", title: "Fluted Wood Panel", desc: "Vertical fluted wood panelling in a repeating rhythm, a graphic, tactile texture for a living or dining wall.", src: "/uploads/catalogue-accentwall-2.jpg" },
+      { id: "aw-style-3d", title: "Fluted Panel with Accent", desc: "Fluted vertical panels flanking a sculptural centrepiece, ideal for stairwells and hallways.", src: "/uploads/catalogue-accentwall-3.jpg" },
       { id: "aw-style-lattice", title: "Fluted Slat Panel", desc: "A vertical fluted or slat pattern, often paired with a mirror or art piece, for a refined textured backdrop.", src: "/uploads/catalogue-accentwall-6.jpg" },
     ],
     introSections: [
