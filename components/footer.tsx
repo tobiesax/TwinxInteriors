@@ -38,7 +38,7 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.08em] text-offwhite">Materials</div>
+            <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.08em] text-offwhite">Our Services</div>
             <div className="flex flex-col gap-3.5">
               {materials.map((m) => (
                 <FooterLink key={m.slug} href={`/materials/${m.slug}`}>
@@ -55,7 +55,10 @@ export function Footer() {
               <br />
               134 Aramist Ave
             </p>
-            <FooterLink href="tel:0120040919">012 004 0919</FooterLink>
+            <div className="flex flex-col gap-1">
+              <FooterLink href="tel:0120040919">012 004 0919</FooterLink>
+              <FooterLink href="mailto:info@twinxinteriors.co.za">info@twinxinteriors.co.za</FooterLink>
+            </div>
           </div>
 
           <div>
@@ -65,7 +68,10 @@ export function Footer() {
               <br />
               Morningside
             </p>
-            <FooterLink href="tel:0310020454">031 002 0454</FooterLink>
+            <div className="flex flex-col gap-1">
+              <FooterLink href="tel:0310020454">031 002 0454</FooterLink>
+              <FooterLink href="mailto:durbanadmin@twinxinteriors.co.za">durbanadmin@twinxinteriors.co.za</FooterLink>
+            </div>
           </div>
         </div>
 
