@@ -4,6 +4,7 @@ import { ExploreMaterials } from "@/components/home/explore-materials";
 import { InstagramReels } from "@/components/home/instagram-reels";
 import { ClientLogoMarquee } from "@/components/home/client-logo-marquee";
 import { Testimonials } from "@/components/home/testimonials";
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { FlowButton } from "@/components/flow-button";
 import { SolidButton } from "@/components/solid-button";
@@ -18,12 +19,25 @@ export default function HomePage() {
 
       <section id="how-we-work" className="relative border-y border-black/[0.06] bg-white px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
         <div className="mx-auto max-w-[1400px]">
-          <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
-            Our Design Process
+          <div className="mb-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
+            <div>
+              <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
+                Our Design Process
+              </div>
+              <h2 className="m-0 max-w-[640px] font-jost text-[clamp(30px,4vw,46px)] font-light leading-[1.1] text-ink">
+                A straightforward procedure, start to finish.
+              </h2>
+            </div>
+            <div className="relative hidden h-[180px] overflow-hidden rounded-[3px] lg:block">
+              <Image
+                src="/uploads/catalogue-wallframe-1.jpg"
+                alt="Panel moulding detail with ornate cornice"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
           </div>
-          <h2 className="m-0 mb-14 max-w-[640px] font-jost text-[clamp(30px,4vw,46px)] font-light leading-[1.1] text-ink">
-            A straightforward procedure, start to finish.
-          </h2>
           <Reveal className="flex flex-col">
             {processSteps.map((step) => (
               <div

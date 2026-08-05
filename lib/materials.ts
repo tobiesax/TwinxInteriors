@@ -52,7 +52,7 @@ export const materials: MaterialData[] = [
       { id: "wfm-1", label: "Panel moulding, living room wall", src: "/uploads/catalogue-wallframe-5.jpg" },
       { id: "wfm-2", label: "Single profile box moulding", src: "/uploads/catalogue-general-1.jpg" },
       { id: "wfm-3", label: "Double profile box moulding", src: "/uploads/catalogue-wallframe-3.jpg" },
-      { id: "wfm-4", label: "Feature wall with sculptural console", src: "/uploads/catalogue-wallframe-4.jpg" },
+      { id: "wfm-4", label: "Feature wall", src: "/uploads/catalogue-wallframe-4.jpg" },
       { id: "wfm-5", label: "Ornate cornice moulding detail", src: "/uploads/catalogue-wallframe-1.jpg" },
       { id: "wfm-6", label: "Panel moulding wall, orange sofa", src: "/uploads/catalogue-wallframe-6.jpg" },
     ],
@@ -120,9 +120,9 @@ export const materials: MaterialData[] = [
     gallery: [
       { id: "aw-1", label: "Panel wainscoting, curtained window", src: "/uploads/catalogue-accentwall-1.jpg", detail: "Panel moulding wainscoting alongside a draped window, giving the wall texture and shadow depth." },
       { id: "aw-2", label: "Slat panel accent wall, seating nook", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Vertical slat panelling behind a pair of armchairs, a graphic, tactile pattern for a living space." },
+      { id: "aw-5", label: "Fluted wood accent wall", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Fluted wood panelling shaped into a textured accent wall — a warm, tactile finish with real depth and dimension." },
       { id: "aw-3", label: "Fluted panel with sphere accent", src: "/uploads/catalogue-accentwall-3.jpg", detail: "Fluted vertical panels flanking a plain moulded centre panel, with a sculptural sphere at the base." },
       { id: "aw-4", label: "Boxed panel wall, patterned rug", src: "/uploads/catalogue-accentwall-4.jpg", detail: "Three tall boxed panel mouldings set into a charcoal wall, framed by an arched window and patterned rug." },
-      { id: "aw-5", label: "Wood & stone mixed accent wall", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Fluted wood panelling paired with a raw stone-textured insert, mixing warm and tactile materials on one wall." },
       { id: "aw-6", label: "Dark slat panel media wall", src: "/uploads/catalogue-accentwall-6.jpg", detail: "Floor-to-ceiling slat panelling in a dark tone, framing a floating media console and TV." },
     ],
     designCardsEyebrow: "Pattern Options",
@@ -168,7 +168,7 @@ export const materials: MaterialData[] = [
       "Panels with linear, fluted designs made of engineered composites with a natural wood finish — a great way to emphasise and bring focus onto a wall in an interior space. Durable and low-maintenance, with a full supplier finish catalogue so you can see every colour applied at scale.",
     statLine: "Reference gallery",
     gallery: [
-      { id: "pvc-install-1", label: "Fluted wood-finish panel wall, lounge", src: "/uploads/catalogue-pvc-2.jpg" },
+      { id: "pvc-install-1", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg" },
       { id: "pvc-install-2", label: "Fluted panel with pendant lighting", src: "/uploads/catalogue-pvc-1.jpg" },
       { id: "pvc-install-3", label: "Fluted panel, side-table vignette", src: "/uploads/catalogue-pvc-3.jpg" },
       { id: "pvc-install-4", label: "Fluted panel with warm-lit shelf", src: "/uploads/catalogue-pvc-4.jpg" },
@@ -226,7 +226,7 @@ export const materials: MaterialData[] = [
     midCtaHeading: "Ready to give your wall this treatment?",
     gallery: [
       { id: "wp-1", label: "Art deco fan-print wallpaper, hallway", src: "/uploads/catalogue-wallpaper-1.jpg" },
-      { id: "wp-2", label: "Textured neutral wallpaper, living room", src: "/uploads/catalogue-wallpaper-2.jpg" },
+      { id: "wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg" },
       { id: "wp-3", label: "Deep teal geometric wallpaper", src: "/uploads/catalogue-wallpaper-3.jpg" },
       { id: "wp-4", label: "Woven-texture green wallpaper", src: "/uploads/catalogue-wallpaper-4.jpg" },
       { id: "wp-5", label: "Crackle-pattern metallic wallpaper", src: "/uploads/catalogue-wallpaper-5.jpg" },

@@ -38,20 +38,20 @@ export function ProofGallery() {
           See full portfolio →
         </Link>
       </div>
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-1.5 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-1.5">
         {visibleItems.map((item, i) => (
           <div
             key={item.id}
             onClick={() => setActiveIndex(i)}
             className="group cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-1"
           >
-            <div className="relative h-[170px] overflow-hidden rounded-[3px] transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)]">
+            <div className="relative h-[220px] overflow-hidden rounded-[3px] transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)] sm:h-[170px]">
               <Image
                 src={item.src}
                 alt={item.label}
                 fill
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
-                sizes="(max-width: 640px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, 33vw"
               />
             </div>
           </div>

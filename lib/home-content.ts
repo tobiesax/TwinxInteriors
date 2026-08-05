@@ -1,18 +1,16 @@
 export type ProofItem = { id: string; label: string; src: string; detail: string };
 
+// One representative photo per service — no category repeated, none skipped.
 export const proofItems: ProofItem[] = [
-  { id: "pf-wfm-2", label: "Single profile box moulding", src: "/uploads/catalogue-wallframe-2.jpg", detail: "A single-lined box profile run floor-to-ceiling, closely matched to the wall colour so it reads as considered architecture rather than an applied decoration." },
-  { id: "pf-wfm-4", label: "Feature wall with sculptural console", src: "/uploads/catalogue-wallframe-4.jpg", detail: "A plain wall turned into the room's focal point — the moulding frames the console and art beneath it without competing for attention." },
-  { id: "pf-aw-2", label: "Slat panel accent wall, seating nook", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Vertical slat panelling behind a pair of armchairs — a graphic, tactile texture that gives a quiet corner presence." },
-  { id: "pf-aw-5", label: "Wood & stone mixed accent wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Fluted wood panelling paired with a raw stone-textured insert, mixing warm and tactile materials on the same wall." },
-  { id: "pf-wp-2", label: "Wallpaper reference", src: "/uploads/catalogue-wallpaper-2.jpg", detail: "One of the wallpaper finishes from our sample range — full books are available to browse in-studio or at your consultation." },
-  { id: "pf-wp-5", label: "Wallpaper reference", src: "/uploads/catalogue-wallpaper-5.jpg", detail: "A textured wallpaper finish, part of our imported range — see and feel it in person before you commit to a room." },
-  { id: "pf-pu-2", label: "PU stone cladding, media wall", src: "/uploads/catalogue-pustone-2.jpg", detail: "PU stone cladding on a media wall — the look of real stone, lightweight enough to install without structural work." },
+  { id: "pf-wfm-4", label: "Feature wall", src: "/uploads/catalogue-wallframe-4.jpg", detail: "A plain wall turned into the room's focal point — the moulding frames the space beneath it without competing for attention." },
+  { id: "pf-aw-5", label: "Fluted wood accent wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Fluted wood panelling shaped into a textured accent wall — a warm, tactile finish with real depth and dimension." },
+  { id: "pf-pvc-2", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg", detail: "Fluted PVC wall panelling with a natural wood finish — water-resistant and low-maintenance, priced per panel." },
+  { id: "pf-wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg", detail: "A textured wallpaper finish from our imported range — see and feel it in person before you commit to a room." },
+  { id: "pf-ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg", detail: "Custom-built kitchen cabinetry finished in matte grey with open shelving — bespoke joinery designed around how the space is actually used." },
   { id: "pf-pu-5", label: "PU stone panel, living room", src: "/uploads/catalogue-pustone-5.jpg", detail: "Full-wall PU stone cladding in a living space, bringing texture and depth without the weight of natural stone." },
-  { id: "pf-pvc-1", label: "PVC panel reference", src: "/uploads/catalogue-pvc-1.jpg", detail: "Fluted PVC wall panelling — a wood-look finish that's moisture-resistant and simple to maintain." },
-  { id: "pf-pvc-3", label: "PVC panel reference", src: "/uploads/catalogue-pvc-3.jpg", detail: "Another finish from our fluted PVC panel range, priced per panel with sizing worked out to your exact wall." },
-  { id: "pf-gen-1", label: "Black wainscoting, herringbone floor", src: "/uploads/catalogue-general-1.jpg", detail: "Black wainscoting panelling against a herringbone floor — a classic profile taken in a bold, modern direction." },
-  { id: "pf-gen-2", label: "Fluted cabinetry panel with sphere accent", src: "/uploads/catalogue-general-2.jpg", detail: "Fluted cabinetry panelling finished with a sculptural sphere accent — custom joinery detail from a recent project." },
+  { id: "pf-wic-1", label: "Walk-in closet, gold-trim wardrobes", src: "/uploads/IMG_3465.jpg", detail: "A full walk-in closet fit-out in soft grey and walnut, finished with brass hardware and a lit glass display cabinet." },
+  { id: "pf-bar-1", label: "Home bar cabinetry", src: "/uploads/IMG_0425.jpg", detail: "Custom bar cabinetry with backlit fluted panelling — bespoke joinery built around glassware and display." },
+  { id: "pf-gen-1", label: "Black wainscoting", src: "/uploads/catalogue-general-1.jpg", detail: "Black wainscoting panelling run floor-to-ceiling — a classic profile taken in a bold, modern direction." },
 ];
 
 export type ProcessStep = { n: string; title: string; desc: string };
