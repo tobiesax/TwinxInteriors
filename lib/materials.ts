@@ -119,10 +119,10 @@ export const materials: MaterialData[] = [
     midCtaHeading: "Ready to give your wall this treatment?",
     gallery: [
       { id: "aw-1", label: "Panel wainscoting, curtained window", src: "/uploads/catalogue-accentwall-1.jpg", detail: "Panel moulding wainscoting alongside a draped window, giving the wall texture and shadow depth." },
-      { id: "aw-2", label: "Slat panel accent wall, seating nook", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Vertical slat panelling behind a pair of armchairs, a graphic, tactile pattern for a living space." },
+      { id: "aw-2", label: "Slat panel accent wall, seating nook", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Vertical slat panelling behind a pair of armchairs, a graphic, tactile pattern for a living space." },
       { id: "aw-3", label: "Fluted panel with sphere accent", src: "/uploads/catalogue-accentwall-3.jpg", detail: "Fluted vertical panels flanking a plain moulded centre panel, with a sculptural sphere at the base." },
       { id: "aw-4", label: "Boxed panel wall, patterned rug", src: "/uploads/catalogue-accentwall-4.jpg", detail: "Three tall boxed panel mouldings set into a charcoal wall, framed by an arched window and patterned rug." },
-      { id: "aw-5", label: "Wood & stone mixed accent wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Fluted wood panelling paired with a raw stone-textured insert, mixing warm and tactile materials on one wall." },
+      { id: "aw-5", label: "Wood & stone mixed accent wall", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Fluted wood panelling paired with a raw stone-textured insert, mixing warm and tactile materials on one wall." },
       { id: "aw-6", label: "Dark slat panel media wall", src: "/uploads/catalogue-accentwall-6.jpg", detail: "Floor-to-ceiling slat panelling in a dark tone, framing a floating media console and TV." },
     ],
     designCardsEyebrow: "Pattern Options",

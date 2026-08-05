@@ -51,7 +51,7 @@ export default function HomePage() {
       <ExploreMaterials />
 
       <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-5 sm:px-8 lg:px-12 py-11">
-        <div className="font-poppins text-lg font-semibold text-ink">Found the material for your space?</div>
+        <div className="font-poppins text-lg font-semibold text-ink">Found a design that catches your eye?</div>
         <FlowButton href="/contact" variant="solid" size="sm">
           Request a Quote
         </FlowButton>
