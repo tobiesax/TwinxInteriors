@@ -30,8 +30,8 @@ export default function HomePage() {
             </div>
             <div className="relative hidden h-[180px] overflow-hidden rounded-[3px] lg:block">
               <Image
-                src="/uploads/design-process-frame-moulding.jpeg"
-                alt="Panel moulding wall with round mirror and console table"
+                src="/uploads/design-process-accent-wall.jpeg"
+                alt="Dark navy accent wall with irregular wood dowel pattern"
                 fill
                 className="object-cover"
                 sizes="50vw"
