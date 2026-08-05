@@ -16,13 +16,15 @@ export function Footer() {
       <div className="relative z-10 mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-10 pt-16 sm:pt-20 lg:pt-24">
         <div className="mb-12 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr] lg:gap-8 lg:mb-16">
           <div className="max-w-[420px] sm:col-span-2 lg:col-span-1">
-            <Image
-              src="/uploads/twinx-logo-white.png"
-              alt="Twinx Interiors"
-              height={38}
-              width={160}
-              className="mb-6 block h-[38px] w-auto"
-            />
+            <Link href="/" className="mb-6 inline-block">
+              <Image
+                src="/uploads/twinx-logo-white.png"
+                alt="Twinx Interiors"
+                height={38}
+                width={160}
+                className="block h-[38px] w-auto"
+              />
+            </Link>
             <p className="m-0 text-[13px] leading-[1.7] text-[#B5B0AA]">
               Don&apos;t move&hellip; twinx it.
             </p>
