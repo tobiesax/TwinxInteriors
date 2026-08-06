@@ -79,7 +79,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between sm:pt-8">
           <span className="text-[13px] text-[#7A7570]">© 2026 Twinx Interiors. All rights reserved.</span>
-          <span className="text-[13px] text-[#7A7570]">Pretoria · Durban, South Africa</span>
+          <span className="text-[13px] text-[#7A7570]">South Africa</span>
         </div>
       </div>
 
