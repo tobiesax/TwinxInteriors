@@ -2,7 +2,7 @@ export type ProofItem = { id: string; label: string; src: string; detail: string
 
 // One representative photo per service — no category repeated, none skipped.
 export const proofItems: ProofItem[] = [
-  { id: "pf-wfm-4", label: "Feature wall", src: "/uploads/catalogue-wallframe-4.jpg", detail: "A plain wall turned into the room's focal point — the moulding frames the space beneath it without competing for attention." },
+  { id: "pf-wfm-4", label: "Accent wall", src: "/uploads/catalogue-wallframe-4.jpg", detail: "A plain wall turned into the room's focal point — framed to draw the eye without ever competing for attention." },
   { id: "pf-aw-5", label: "Fluted wood accent wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Fluted wood panelling shaped into a textured accent wall — a warm, tactile finish with real depth and dimension." },
   { id: "pf-pvc-2", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg", detail: "Fluted PVC wall panelling with a natural wood finish — water-resistant and low-maintenance, priced per panel." },
   { id: "pf-wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg", detail: "A textured wallpaper finish from our imported range — see and feel it in person before you commit to a room." },
