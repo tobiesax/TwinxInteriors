@@ -7,13 +7,13 @@ export function Hero() {
   return (
     <section className="relative flex h-[calc(100dvh-64px)] min-h-[560px] items-end overflow-hidden px-5 sm:px-8 lg:px-12 pb-10 lg:h-[calc(100dvh-76px)] lg:pb-[60px]">
       <div className="absolute inset-0 z-0">
-        {/* Mobile/tablet: smaller, re-encoded video — same clip, ~1/8th the file size of the desktop source */}
+        {/* Mobile/tablet: dedicated portrait shot (9:16), no side-cropping like a landscape source would need */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          src="/uploads/hero-video-mobile.mp4"
+          src="/uploads/hero-video-mobile-portrait.mp4"
           className="absolute inset-0 h-full w-full object-cover lg:hidden"
         />
         {/* Desktop: full-res hero video */}
