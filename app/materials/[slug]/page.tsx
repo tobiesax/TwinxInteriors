@@ -11,13 +11,20 @@ export async function generateMetadata(props: PageProps<"/materials/[slug]">): P
   const { slug } = await props.params;
   const data = getMaterial(slug);
   if (!data) return {};
+  const title = `${data.title} — Pretoria & Durban`;
   return {
-    title: data.title,
+    title,
     description: data.description,
     openGraph: {
-      title: `${data.title} | Twinx Interiors`,
+      title: `${title} | Twinx Interiors`,
       description: data.description,
-      images: [{ url: data.heroSrc }],
+      images: [{ url: data.heroSrc, width: 1200, height: 900 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Twinx Interiors`,
+      description: data.description,
+      images: [data.heroSrc],
     },
   };
 }

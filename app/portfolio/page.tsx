@@ -3,9 +3,9 @@ import { PortfolioGallery } from "@/components/portfolio-gallery";
 import { SolidButton } from "@/components/solid-button";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio — Real Installs in Pretoria & Durban",
   description:
-    "Completed installs, no renders — feature walls, wardrobes, media walls, and hallways Twinx has actually built across Pretoria and Durban homes.",
+    "Completed wall moulding, accent wall, wardrobe and media wall installs across Pretoria and Durban homes — real projects, no renders. See the Twinx Interiors portfolio.",
 };
 
 export default function PortfolioPage() {
