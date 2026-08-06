@@ -10,7 +10,7 @@ export const proofItems: ProofItem[] = [
   { id: "pf-pu-5", label: "PU stone panel, living room", src: "/uploads/catalogue-pustone-5.jpg", detail: "Full-wall PU stone cladding in a living space, bringing texture and depth without the weight of natural stone." },
   { id: "pf-wic-1", label: "Walk-in closet, gold-trim wardrobes", src: "/uploads/IMG_3465.jpg", detail: "A full walk-in closet fit-out in soft grey and walnut, finished with brass hardware and a lit glass display cabinet." },
   { id: "pf-bar-1", label: "Home bar cabinetry", src: "/uploads/IMG_0425.jpg", detail: "Custom bar cabinetry with backlit fluted panelling — bespoke joinery built around glassware and display." },
-  { id: "pf-gen-1", label: "Black wainscoting", src: "/uploads/catalogue-general-1.jpg", detail: "Black wainscoting panelling run floor-to-ceiling — a classic profile taken in a bold, modern direction." },
+  { id: "pf-gen-1", label: "TV unit, wood slat wall", src: "/uploads/pf-tv-unit-slat.jpg", detail: "A floating TV unit and shelving built into a wood slat feature wall, with integrated lighting on every shelf." },
 ];
 
 export type ProcessStep = { n: string; title: string; desc: string };
