@@ -25,7 +25,7 @@ export function ProofGallery() {
           </h2>
           <p className="m-0 mb-3 max-w-[560px] text-base leading-[1.7] text-muted">
             Wall moulding, feature walls, bespoke cabinetry and more — browse the range of finishes and styles we
-            bring to spaces across Pretoria and Durban.
+            bring to spaces across South Africa.
           </p>
           <p className="m-0 max-w-[560px] text-base leading-[1.7] text-muted">
             Click any photo for a closer look, or browse the full portfolio for more.
