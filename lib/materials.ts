@@ -182,8 +182,8 @@ export const materials: MaterialData[] = [
           "Linear, fluted panels made of engineered composites with a natural wood finish — the look and texture of real wood, without the upkeep.",
           "Water & moisture resistant — repels water, termites and mould, with none of the maintenance real wood needs.",
           "Sized to fit — each panel measures 17cm × 2.9m, in a range of colours, or paint to match any palette.",
-          "Anywhere it counts — a bedroom feature wall, a considered living room design, or a reception that makes a first impression.",
-          "Any style — fits minimalist, contemporary and Scandinavian interiors, from a home office to a boutique hotel.",
+          "Works anywhere — a bedroom feature wall, a statement living room panel, or a reception that leaves a first impression.",
+          "Suits any style — at home in minimalist, contemporary and Scandinavian interiors alike, from a home office to a boutique hotel.",
         ],
       },
       {
