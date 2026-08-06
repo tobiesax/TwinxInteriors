@@ -31,7 +31,7 @@ export function Hero() {
             v.currentTime = 0;
             v.play().catch(() => {});
           }}
-          src="/uploads/hero-video.mp4"
+          src="/uploads/hero-video-2.mp4"
           className="absolute inset-0 hidden h-full w-full object-cover lg:block"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02)_0%,rgba(0,0,0,0.05)_40%,rgba(0,0,0,0.75)_100%)]" />
