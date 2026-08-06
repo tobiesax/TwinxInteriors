@@ -46,11 +46,10 @@ export const processSteps: ProcessStep[] = [
 export type Testimonial = { id: string; quote: string; name: string; role: string };
 
 export const testimonials: Testimonial[] = [
-  { id: "t1", quote: "Twinx turned a plain living room wall into the first thing every guest comments on. The finish is flawless.", name: "Naledi M.", role: "Homeowner, Pretoria" },
-  { id: "t2", quote: "Professional from the first site visit to the final walkthrough. They kept to the timeline and the quote.", name: "Sipho D.", role: "Homeowner, Durban" },
-  { id: "t3", quote: "We used Twinx for our office fit-out — the wall panelling completely changed how the space feels for clients.", name: "Amanda K.", role: "Office Manager, Pretoria" },
-  { id: "t4", quote: "The PU stone cladding in our media wall looks exactly like natural stone. No one believes it isn't.", name: "Johan V.", role: "Homeowner, Centurion" },
-  { id: "t5", quote: "Excellent communication throughout and the cabinetry work is beautifully finished. Would use them again.", name: "Thandi N.", role: "Homeowner, Durban" },
+  { id: "t1", quote: "We had fluted PVC wall panels installed. It looks amazing — gives our living room a clean, professional look. Installers were helpful and professional. Definitely recommend!", name: "Thalia Brussow", role: "Google review" },
+  { id: "t2", quote: "I am giving Twinx Interiors a 5 star because they went way beyond their promise in the delivery of their service. Well done guys.", name: "Lerato Mashiane", role: "Google review" },
+  { id: "t3", quote: "Excellent service and very professional team. Thank you again.", name: "Riaz Shivani", role: "Google review" },
+  { id: "t4", quote: "So lit ☆", name: "Ronewa Rorisang", role: "Google review" },
 ];
 
 export type ClientLogo = { id: string; src: string; alt: string };

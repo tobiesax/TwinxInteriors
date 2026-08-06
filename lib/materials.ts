@@ -72,8 +72,8 @@ export const materials: MaterialData[] = [
       },
       {
         id: "wfm-style-half",
-        title: "Half Wall Design",
-        desc: "For clients who don't want the strip across the whole wall — the strips sit at the bottom, leaving the top for paint or wallpaper. Ask us which suits your wall.",
+        title: "Oval Panel Design",
+        desc: "Rounded, capsule-shaped panels run floor-to-ceiling in an evenly spaced column — a softer, more contemporary take on traditional box moulding. Ask us which suits your wall.",
         src: "/uploads/catalogue-wallframe-5.jpg",
       },
     ],
@@ -111,25 +111,22 @@ export const materials: MaterialData[] = [
     navBlurb: "Geometric & textured feature panels",
     title: "Accent Wall",
     category: "Wall Decor",
-    heroSrc: "/uploads/catalogue-accentwall-1.jpg",
+    heroSrc: "/uploads/catalogue-accentwall-4.jpg",
     description:
       "The wall behind your sofa, your bed, your TV doesn't have to stay plain. Dowel patterns, geometric 3D panels, diamond lattice, diagonal sticks: a statement accent wall turns it into the room's focal point.",
     heroCta: true,
     statLine: "Reference gallery",
     midCtaHeading: "Ready to give your wall this treatment?",
+    // 4 gallery slots (aw-1, aw-2, aw-3, aw-5) and 2 design cards (aw-style-dowel, aw-style-3d)
+    // were removed — they were stock box/grid-moulding photos, not genuine accent-wall patterns
+    // (dowel, geometric 3D, lattice). Re-add once real accent-wall photos come in.
     gallery: [
-      { id: "aw-1", label: "Panel wainscoting, curtained window", src: "/uploads/catalogue-accentwall-1.jpg", detail: "Panel moulding wainscoting alongside a draped window, giving the wall texture and shadow depth." },
-      { id: "aw-2", label: "Slat panel accent wall, seating nook", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Vertical slat panelling behind a pair of armchairs, a graphic, tactile pattern for a living space." },
-      { id: "aw-5", label: "Fluted wood accent wall", src: "/uploads/catalogue-accentwall-2.jpg", detail: "Fluted wood panelling shaped into a textured accent wall — a warm, tactile finish with real depth and dimension." },
-      { id: "aw-3", label: "Fluted panel with sphere accent", src: "/uploads/catalogue-accentwall-3.jpg", detail: "Fluted vertical panels flanking a plain moulded centre panel, with a sculptural sphere at the base." },
-      { id: "aw-4", label: "Boxed panel wall, patterned rug", src: "/uploads/catalogue-accentwall-4.jpg", detail: "Three tall boxed panel mouldings set into a charcoal wall, framed by an arched window and patterned rug." },
-      { id: "aw-6", label: "Dark slat panel media wall", src: "/uploads/catalogue-accentwall-6.jpg", detail: "Floor-to-ceiling slat panelling in a dark tone, framing a floating media console and TV." },
+      { id: "aw-4", label: "Slat panel accent wall, armchair pair", src: "/uploads/catalogue-accentwall-4.jpg", detail: "Floor-to-ceiling slat panelling in a blue-grey tone, framed by an arched window and a pair of accent chairs." },
+      { id: "aw-6", label: "Wood slat panel, mixed-texture wall", src: "/uploads/catalogue-accentwall-6.jpg", detail: "A vertical wood slat panel set beside a textured plaster wall section, framing a side table and sofa nook." },
     ],
     designCardsEyebrow: "Pattern Options",
     designCards: [
-      { id: "aw-style-dowel", title: "Fluted Wood Panel", desc: "Vertical fluted wood panelling in a repeating rhythm, a graphic, tactile texture for a living or dining wall.", src: "/uploads/catalogue-accentwall-2.jpg" },
-      { id: "aw-style-3d", title: "Fluted Panel with Accent", desc: "Fluted vertical panels flanking a sculptural centrepiece, ideal for stairwells and hallways.", src: "/uploads/catalogue-accentwall-3.jpg" },
-      { id: "aw-style-lattice", title: "Fluted Slat Panel", desc: "A vertical fluted or slat pattern, often paired with a mirror or art piece, for a refined textured backdrop.", src: "/uploads/catalogue-accentwall-6.jpg" },
+      { id: "aw-style-lattice", title: "Wood Slat Panel", desc: "A vertical wood slat pattern, often paired with a mirror or art piece, for a refined textured backdrop.", src: "/uploads/catalogue-accentwall-6.jpg" },
     ],
     introSections: [
       {
@@ -227,13 +224,13 @@ export const materials: MaterialData[] = [
     statLine: "Reference gallery",
     midCtaHeading: "Ready to give your wall this treatment?",
     gallery: [
-      { id: "wp-1", label: "Art deco fan-print wallpaper, hallway", src: "/uploads/catalogue-wallpaper-1.jpg" },
+      { id: "wp-1", label: "Geometric dot-print wallpaper, teal & gold", src: "/uploads/catalogue-wallpaper-1.jpg" },
       { id: "wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg" },
-      { id: "wp-3", label: "Deep teal geometric wallpaper", src: "/uploads/catalogue-wallpaper-3.jpg" },
-      { id: "wp-4", label: "Woven-texture green wallpaper", src: "/uploads/catalogue-wallpaper-4.jpg" },
-      { id: "wp-5", label: "Crackle-pattern metallic wallpaper", src: "/uploads/catalogue-wallpaper-5.jpg" },
-      { id: "wp-6", label: "Honeycomb-pattern wallpaper, sideboard", src: "/uploads/catalogue-wallpaper-6.jpg" },
-      { id: "wp-7", label: "Fan-print wallpaper, gold on olive", src: "/uploads/catalogue-wallpaper-7.jpg" },
+      { id: "wp-3", label: "Woven-texture wallpaper, charcoal", src: "/uploads/catalogue-wallpaper-3.jpg" },
+      { id: "wp-4", label: "Crackle-pattern wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-4.jpg" },
+      { id: "wp-5", label: "Honeycomb-pattern wallpaper, sage green", src: "/uploads/catalogue-wallpaper-5.jpg" },
+      { id: "wp-6", label: "Fan-print wallpaper, olive & gold", src: "/uploads/catalogue-wallpaper-6.jpg" },
+      { id: "wp-7", label: "Medallion damask wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-7.jpg" },
       { id: "wp-8", label: "Damask-pattern wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-8.jpg" },
       { id: "wp-9", label: "Damask-pattern wallpaper, bedroom", src: "/uploads/catalogue-wallpaper-9.jpg" },
     ],
@@ -308,7 +305,7 @@ export const materials: MaterialData[] = [
     gallery: [
       { id: "ku-1", label: "Home bar cabinetry with backlit shelving", src: "/uploads/ku-home-bar.jpg" },
       { id: "ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg" },
-      { id: "ku-3", label: "Fluted cabinetry panel with sphere accent", src: "/uploads/catalogue-general-2.jpg" },
+      { id: "ku-3", label: "Fluted wood panel wall, floating display shelf", src: "/uploads/catalogue-general-2.jpg" },
       { id: "ku-4", label: "Walk-in wardrobe cabinetry, lit display shelving", src: "/uploads/ku-wardrobe-lit-shelving.jpg" },
       { id: "ku-5", label: "Built-in media wall with backlit shelving", src: "/uploads/ku-media-wall-shelving.jpg" },
     ],
@@ -375,11 +372,11 @@ export const materials: MaterialData[] = [
       },
       {
         eyebrow: "Twinx PU Stone",
-        heading: "PU stone media wall, wood slat paneling",
+        heading: "PU stone accent wall, bedroom",
         imageId: "pu-about-color",
         imageSrc: "/uploads/catalogue-pustone-5.jpg",
         paragraphs: [
-          "PU stone can also be combined with wood slat paneling for a warmer, layered media wall — the stone reads as the feature, the slats frame the TV.",
+          "PU stone works just as well in a bedroom as a living space — here it's set beside a wood slat panel, with warm pendant lighting either side of the bed.",
           "Our standard finish is black, but PU stone can be painted into any colour to match the rest of the room.",
         ],
       },
@@ -394,20 +391,20 @@ export const materials: MaterialData[] = [
       },
       {
         eyebrow: "In Application",
-        heading: "PU stone headboard wall, bedroom (dark finish)",
+        heading: "PU stone media wall, living room (dark finish)",
         imageId: "pu-5",
         imageSrc: "/uploads/catalogue-pustone-4.jpg",
         paragraphs: [
-          "A textured PU stone headboard wall, finished with pendant lighting either side of the bed.",
+          "A rough-cast PU stone insert set beside the TV, paired with a floating media console for texture and contrast without extra bulk.",
         ],
       },
       {
         eyebrow: "In Application",
-        heading: "PU stone headboard wall, bedroom (light finish)",
+        heading: "PU stone feature wall, living room (light finish)",
         imageId: "pu-8",
         imageSrc: "/uploads/catalogue-pustone-7.jpg",
         paragraphs: [
-          "A dark PU stone feature wall running behind the headboard and nightstand — a calm, tactile backdrop that pairs well with warm lighting.",
+          "Alternating PU stone and wood-tone wall panels frame the seating area — texture and contrast without a single loud finish.",
         ],
       },
     ],
