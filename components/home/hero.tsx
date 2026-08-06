@@ -1,36 +1,27 @@
 "use client";
 
-import { useRef } from "react";
-import Image from "next/image";
 import { SolidButton } from "@/components/solid-button";
 import { FlowButton } from "@/components/flow-button";
 
 export function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
   return (
     <section className="relative flex h-[calc(100dvh-64px)] min-h-[560px] items-end overflow-hidden px-5 sm:px-8 lg:px-12 pb-10 lg:h-[calc(100dvh-76px)] lg:pb-[60px]">
       <div className="absolute inset-0 z-0">
-        {/* Mobile/tablet: static image — avoids an awkward crop and heavy download from the landscape hero video on small screens */}
-        <Image
-          src="/uploads/catalogue-wallframe-4.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover lg:hidden"
-        />
-        {/* Desktop: hero video */}
+        {/* Mobile/tablet: smaller, re-encoded video — same clip, ~1/8th the file size of the desktop source */}
         <video
-          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          onEnded={(e) => {
-            const v = e.currentTarget;
-            v.currentTime = 0;
-            v.play().catch(() => {});
-          }}
+          src="/uploads/hero-video-mobile.mp4"
+          className="absolute inset-0 h-full w-full object-cover lg:hidden"
+        />
+        {/* Desktop: full-res hero video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           src="/uploads/hero-video-2.mp4"
           className="absolute inset-0 hidden h-full w-full object-cover lg:block"
         />
