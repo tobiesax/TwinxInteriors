@@ -177,7 +177,7 @@ export const materials: MaterialData[] = [
         eyebrow: "Hand Crafted, Elegant & Unique",
         heading: "Fluted panelling that fits any space, any style",
         imageId: "pvc-about-1",
-        imageSrc: "/uploads/catalogue-pvc-4.jpg",
+        imageSrc: "/uploads/catalogue-pvc-1.jpg",
         paragraphs: [
           "Linear, fluted panels made of engineered composites with a natural wood finish — the look and texture of real wood, without the upkeep.",
           "Water & moisture resistant — repels water, termites and mould, with none of the maintenance real wood needs.",
