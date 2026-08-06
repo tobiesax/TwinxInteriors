@@ -74,9 +74,9 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           {data.heroCta && (
             <div className="flex flex-wrap gap-3.5">
               <SolidButton href="/contact" size="md">
-                Get a Project Quote
+                Request a Quote
               </SolidButton>
-              <FlowButton href="https://wa.me/27120040919" variant="outline-dark" size="md" external>
+              <FlowButton href="https://wa.me/27846727415" variant="outline-dark" size="md" external>
                 Chat on WhatsApp
               </FlowButton>
             </div>
@@ -150,9 +150,9 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             <h3 className="m-0 font-poppins text-xl font-bold text-ink">{data.midCtaHeading}</h3>
             <div className="flex flex-wrap gap-3.5">
               <SolidButton href="/contact" size="md">
-                Get a Project Quote
+                Request a Quote
               </SolidButton>
-              <FlowButton href="https://wa.me/27120040919" variant="outline-light" size="md" external>
+              <FlowButton href="https://wa.me/27846727415" variant="outline-light" size="md" external>
                 Chat on WhatsApp
               </FlowButton>
             </div>
@@ -167,7 +167,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             Material Swatches
           </div>
           {!data.hideSwatchesHeading && (
-            <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">2025 sample sheet</h2>
+            <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">Sample sheet</h2>
           )}
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
             {data.swatches.map((sw, i) => (
@@ -370,9 +370,9 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           <SolidButton href="/contact" size="lg">
-            Get a Project Quote
+            Request a Quote
           </SolidButton>
-          <FlowButton href="https://wa.me/27120040919" variant="outline-light" size="lg" external>
+          <FlowButton href="https://wa.me/27846727415" variant="outline-light" size="lg" external>
             Chat on WhatsApp
           </FlowButton>
         </div>

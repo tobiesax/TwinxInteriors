@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div>
         <div className="mb-5 flex items-center gap-2.5">
           <span className="h-px w-7 bg-brand" />
-          <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Get a Project Quote</span>
+          <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Request a Quote</span>
         </div>
         <h1 className="m-0 mb-6 font-jost text-[clamp(34px,4.5vw,52px)] font-light uppercase leading-[1.08] text-ink">
           Tell us about the space.
@@ -47,7 +47,7 @@ export default function ContactPage() {
         </div>
 
         <a
-          href="https://wa.me/27120040919"
+          href="https://wa.me/27846727415"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 rounded-[3px] border border-black/[0.18] px-6 py-3.5 text-sm font-bold text-ink no-underline transition-colors duration-200 hover:border-brand hover:text-brand"

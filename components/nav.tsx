@@ -91,12 +91,20 @@ export function Nav() {
               }`}
             >
               Our Services{" "}
-              <span
-                className="inline-block text-[11px] transition-transform duration-[250ms] ease-in-out"
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline-block transition-transform duration-[250ms] ease-in-out"
                 style={{ transform: materialsOpen ? "rotate(180deg)" : "rotate(0deg)" }}
               >
-                ▾
-              </span>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </span>
 
             {materialsOpen && (
@@ -125,7 +133,7 @@ export function Nav() {
             href="/contact"
             className="rounded-[3px] bg-brand px-5 py-2.5 font-jost text-[13px] font-bold uppercase tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:bg-brand-dark"
           >
-            Get a Quote
+            Request a Quote
           </Link>
         </div>
 
@@ -164,12 +172,20 @@ export function Nav() {
               className={`flex items-center justify-between py-3 text-base font-semibold uppercase ${isMaterials ? "text-ink" : "text-muted-2"}`}
             >
               Our Services
-              <span
-                className="text-xs transition-transform duration-200"
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-200"
                 style={{ transform: mobileMaterialsOpen ? "rotate(180deg)" : "rotate(0deg)" }}
               >
-                ▾
-              </span>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </button>
             {mobileMaterialsOpen && (
               <div className="mb-2 flex flex-col gap-1 border-l border-black/10 pl-4">
@@ -200,7 +216,7 @@ export function Nav() {
               onClick={() => setMobileOpen(false)}
               className="mt-4 rounded-[3px] bg-brand px-5 py-3.5 text-center font-jost text-sm font-bold uppercase tracking-[0.02em] text-white no-underline"
             >
-              Get a Quote
+              Request a Quote
             </Link>
           </div>
         </div>

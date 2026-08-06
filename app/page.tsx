@@ -87,7 +87,7 @@ export default function HomePage() {
             <SolidButton href="/contact" size="lg">
               Request a Quote
             </SolidButton>
-            <FlowButton href="https://wa.me/27120040919" variant="outline-light" size="lg" external>
+            <FlowButton href="https://wa.me/27846727415" variant="outline-light" size="lg" external>
               Chat on WhatsApp
             </FlowButton>
           </div>

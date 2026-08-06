@@ -166,7 +166,7 @@ export const materials: MaterialData[] = [
     heroSrc: "/uploads/catalogue-pvc-2.jpg",
     description:
       "Panels with linear, fluted designs made of engineered composites with a natural wood finish — a great way to emphasise and bring focus onto a wall in an interior space. Durable and low-maintenance, with a full supplier finish catalogue so you can see every colour applied at scale.",
-    statLine: "Reference gallery",
+    statLine: "Look gallery",
     gallery: [
       { id: "pvc-install-1", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg" },
       { id: "pvc-install-2", label: "Fluted panel with pendant lighting", src: "/uploads/catalogue-pvc-1.jpg" },

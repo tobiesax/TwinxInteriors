@@ -32,7 +32,7 @@ export default function PortfolioPage() {
           See something close to what you want?
         </h2>
         <SolidButton href="/contact" size="lg">
-          Get a Project Quote
+          Request a Quote
         </SolidButton>
       </section>
     </div>
