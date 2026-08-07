@@ -30,8 +30,12 @@ export default function HomePage() {
             {processSteps.map((step) => (
               <div
                 key={step.n}
-                className="grid grid-cols-1 gap-4 border-t border-black/10 py-9 sm:grid-cols-[minmax(160px,280px)_1fr] sm:gap-10"
+                className="relative grid grid-cols-1 gap-4 overflow-hidden border-t border-black/10 py-9 sm:grid-cols-[minmax(160px,280px)_1fr] sm:gap-10"
               >
+                <span className="pointer-events-none absolute right-0 top-1/2 -z-10 hidden -translate-y-1/2 select-none items-baseline gap-2 sm:flex">
+                  <span className="font-poppins text-[26px] font-bold uppercase text-brand/[0.07]">Step</span>
+                  <span className="font-jost text-[160px] font-bold leading-none text-brand/[0.07]">{parseInt(step.n, 10)}</span>
+                </span>
                 <div className="flex items-baseline gap-3.5">
                   <span className="font-poppins text-[15px] font-bold text-brand">{step.n}</span>
                   <span className="font-poppins text-xl text-ink">{step.title}</span>
