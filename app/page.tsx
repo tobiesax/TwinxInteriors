@@ -56,7 +56,7 @@ export default function HomePage() {
       </section>
 
       <section className="relative flex flex-wrap items-center justify-center gap-6 bg-cream px-5 sm:px-8 lg:px-12 py-11 text-center">
-        <div className="font-poppins text-2xl sm:text-3xl font-semibold text-ink">Don&apos;t move&hellip; twinx it.</div>
+        <div className="font-poppins text-2xl sm:text-3xl font-semibold text-ink">Don&apos;t move&hellip; Twinx it.</div>
         <FlowButton href="/contact" variant="solid" size="sm">
           Request a Quote
         </FlowButton>

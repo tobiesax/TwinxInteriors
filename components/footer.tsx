@@ -26,7 +26,7 @@ export function Footer() {
               />
             </Link>
             <p className="m-0 text-[13px] leading-[1.7] text-[#B5B0AA]">
-              Don&apos;t move&hellip; twinx it.
+              Don&apos;t move&hellip; Twinx it.
             </p>
           </div>
 
