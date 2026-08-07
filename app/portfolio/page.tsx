@@ -28,7 +28,7 @@ export default function PortfolioPage() {
       <PortfolioGallery />
 
       <section className="w-full bg-cream px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px] text-center">
-        <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light text-ink">
+        <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light uppercase text-ink">
           See something close to what you want?
         </h2>
         <SolidButton href="/contact" size="lg">

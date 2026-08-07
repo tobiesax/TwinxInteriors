@@ -49,7 +49,7 @@ export function InstagramReels() {
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
           <div>
             <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">On Instagram</div>
-            <h2 className="m-0 max-w-[600px] font-jost text-[clamp(28px,3.6vw,42px)] font-light leading-[1.1] text-ink">
+            <h2 className="m-0 max-w-[600px] font-jost text-[clamp(28px,3.6vw,42px)] font-light uppercase leading-[1.1] text-ink">
               Behind the scenes, in motion
             </h2>
           </div>

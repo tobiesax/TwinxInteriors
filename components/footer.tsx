@@ -25,7 +25,7 @@ export function Footer() {
                 className="block h-[38px] w-auto"
               />
             </Link>
-            <p className="m-0 text-[13px] leading-[1.7] text-[#B5B0AA]">
+            <p className="m-0 text-[13px] uppercase leading-[1.7] text-[#B5B0AA]">
               Don&apos;t move&hellip; Twinx it.
             </p>
           </div>

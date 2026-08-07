@@ -20,7 +20,7 @@ export function ProofGallery() {
       <div className="mx-auto mb-8 flex max-w-[1400px] flex-wrap items-baseline justify-between gap-6">
         <div>
           <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">The Gallery</div>
-          <h2 className="m-0 mb-4 font-jost text-[clamp(30px,4vw,46px)] font-light leading-[1.1] text-ink">
+          <h2 className="m-0 mb-4 font-jost text-[clamp(30px,4vw,46px)] font-light uppercase leading-[1.1] text-ink">
             A closer look at every finish.
           </h2>
           <p className="m-0 mb-3 max-w-[560px] text-base leading-[1.7] text-muted">

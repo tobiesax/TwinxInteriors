@@ -147,7 +147,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       {data.midCtaHeading && (
         <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-16">
           <div className="flex flex-wrap items-center justify-between gap-6 rounded-[3px] bg-cream p-6 sm:p-10">
-            <h3 className="m-0 font-poppins text-xl font-bold text-ink">{data.midCtaHeading}</h3>
+            <h3 className="m-0 font-poppins text-xl font-bold uppercase text-ink">{data.midCtaHeading}</h3>
             <div className="flex flex-wrap gap-3.5">
               <SolidButton href="/contact" size="md">
                 Request a Quote
@@ -167,7 +167,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             Material Swatches
           </div>
           {!data.hideSwatchesHeading && (
-            <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light">Sample sheet</h2>
+            <h2 className="mb-10 font-jost text-[clamp(26px,3.5vw,38px)] font-light uppercase">Sample sheet</h2>
           )}
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
             {data.swatches.map((sw, i) => (
@@ -198,7 +198,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           <div className="grid grid-cols-1 items-start gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
             <div>
               <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{xs.eyebrow}</div>
-              <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light leading-[1.2] text-ink">
+              <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light uppercase leading-[1.2] text-ink">
                 {xs.heading}
               </h2>
               {xs.imageSrc && (
@@ -264,7 +264,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
               </div>
               <div>
                 <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{xs.eyebrow}</div>
-                <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light leading-[1.2] text-ink">
+                <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light uppercase leading-[1.2] text-ink">
                   {xs.heading}
                 </h2>
                 <div className="flex flex-col gap-5 text-base leading-[1.7] text-muted">
@@ -280,7 +280,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             <div className="grid grid-cols-1 items-center gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
               <div>
                 <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{xs.eyebrow}</div>
-                <h2 className="m-0 font-jost text-[clamp(24px,3vw,32px)] font-light leading-[1.2] text-ink">
+                <h2 className="m-0 font-jost text-[clamp(24px,3vw,32px)] font-light uppercase leading-[1.2] text-ink">
                   {xs.heading}
                 </h2>
               </div>
@@ -348,7 +348,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-black/[0.08] pt-10">
             <div>
               <div className="mb-2.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Full Reference</div>
-              <h3 className="m-0 font-poppins text-[22px] font-bold text-ink">
+              <h3 className="m-0 font-poppins text-[22px] font-bold uppercase text-ink">
                 {data.catalogueHeading ?? "Browse the complete supplier finish catalogue"}
               </h3>
             </div>
@@ -365,7 +365,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Closing CTA */}
       <section className="w-full bg-cream px-5 sm:px-8 lg:px-12 py-16 text-center lg:py-32">
-        <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light text-ink">
+        <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light uppercase text-ink">
           Ready to talk through {data.title.toLowerCase()}?
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
