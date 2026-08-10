@@ -45,13 +45,13 @@ export function ContactForm() {
 
       <div>
         <div className="mb-2.5 text-xs font-semibold uppercase tracking-[0.08em] text-muted">Name</div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <input name="firstName" required placeholder="First" className={inputClasses} />
           <input name="lastName" placeholder="Last" className={inputClasses} />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <input name="phone" required placeholder="Phone" className={inputClasses} />
         <input name="email" placeholder="Email" type="email" className={inputClasses} />
       </div>
