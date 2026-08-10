@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Typewriter } from "@/components/typewriter";
 
 export function NewArrivalBanner() {
   return (
@@ -19,8 +20,8 @@ export function NewArrivalBanner() {
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.65)_0%,rgba(0,0,0,0.35)_45%,rgba(0,0,0,0.05)_75%)]" />
         <div className="relative z-[1] flex h-full flex-col justify-center px-6 sm:px-10 lg:px-14">
           <div className="mb-4 flex items-center gap-2.5">
-            <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-white">
-              New Arrival
+            <span className="min-w-[6.5em] rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-white">
+              <Typewriter text="New Arrival" loop />
             </span>
           </div>
           <h2 className="m-0 mb-4 max-w-[560px] font-jost text-[clamp(30px,4.5vw,52px)] font-light uppercase leading-[1.08] text-white [text-shadow:0_1px_10px_rgba(0,0,0,0.35)]">
