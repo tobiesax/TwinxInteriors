@@ -97,6 +97,54 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
         )}
       </section>
 
+      {/* New Arrival spotlight */}
+      {data.newArrival && (
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-16">
+          <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+            <div className="relative h-[400px] overflow-hidden rounded-[3px]">
+              <Image src={data.newArrival.imageSrc} alt={data.newArrival.heading} fill className="object-cover" sizes="50vw" />
+            </div>
+            <div>
+              <div className="mb-5 flex items-center gap-2.5">
+                <span className="h-px w-7 bg-brand" />
+                <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
+                  {data.newArrival.eyebrow}
+                </span>
+              </div>
+              <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light uppercase leading-[1.2] text-ink">
+                {data.newArrival.heading}
+              </h2>
+              <div className="flex flex-col gap-5 text-base leading-[1.7] text-muted">
+                {data.newArrival.paragraphs.map((p, pi) => (
+                  <p key={pi} className="m-0">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+          {data.newArrival.supportingImages && data.newArrival.supportingImages.length > 0 && (
+            <div className="mt-16 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+              {data.newArrival.supportingImages.map((card) => (
+                <div key={card.id}>
+                  <div className="relative mb-5 aspect-[3/5] overflow-hidden rounded-[3px]">
+                    <Image
+                      src={card.src}
+                      alt={card.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <h3 className="m-0 mb-2.5 font-poppins text-[17px] font-bold uppercase text-ink">{card.title}</h3>
+                  <p className="m-0 text-[14.5px] leading-[1.7] text-muted">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
       {/* Gallery */}
       {data.gallery.length > 0 && (
         <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-14">

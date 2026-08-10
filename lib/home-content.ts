@@ -62,7 +62,7 @@ export const clientLogos: ClientLogo[] = [
   { id: "client-logo-gibb", src: "/uploads/GIBB.jpg", alt: "GIBB" },
 ];
 
-export type MaterialCard = { href: string; label: string; src: string };
+export type MaterialCard = { href: string; label: string; src: string; isNew?: boolean; desc?: string };
 
 export const exploreMaterialCards: MaterialCard[] = [
   { href: "/materials/wall-frame-moulding", label: "Wall Frame Moulding", src: "/uploads/catalogue-accentwall-3.jpg" },

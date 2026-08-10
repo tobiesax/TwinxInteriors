@@ -14,7 +14,7 @@ export function ExploreMaterials() {
         <Reveal className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {exploreMaterialCards.map((card) => (
             <Link
-              key={card.href}
+              key={card.label}
               href={card.href}
               className="group relative block h-[260px] overflow-hidden rounded-[3px] text-white no-underline transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)]"
             >
@@ -26,8 +26,16 @@ export function ExploreMaterials() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_40%,rgba(0,0,0,0.6)_100%)]" />
-              <div className="pointer-events-none absolute bottom-5 left-[22px] font-poppins text-[19px] font-bold uppercase">
-                {card.label}
+              {card.isNew && (
+                <div className="pointer-events-none absolute left-[22px] top-[18px] rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-white">
+                  New
+                </div>
+              )}
+              <div className="pointer-events-none absolute bottom-5 left-[22px] right-[54px] flex flex-col gap-1.5">
+                <div className="font-poppins text-[19px] font-bold uppercase">{card.label}</div>
+                {card.desc && (
+                  <div className="text-[12.5px] font-normal normal-case leading-snug text-white/85">{card.desc}</div>
+                )}
               </div>
               <div className="pointer-events-none absolute right-5 top-[18px] flex h-[38px] w-[38px] rotate-[-45deg] items-center justify-center rounded-full bg-white/[0.18] text-[22px] font-bold text-brand backdrop-blur-[6px] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.12]">
                 →

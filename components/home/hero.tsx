@@ -13,7 +13,7 @@ export function Hero() {
           loop
           muted
           playsInline
-          src="/uploads/hero-video-mobile-portrait.mp4"
+          src="/uploads/hero-video-mobile-portrait-v2.mp4"
           className="absolute inset-0 h-full w-full object-cover lg:hidden"
         />
         {/* Desktop: full-res hero video */}

@@ -10,6 +10,13 @@ export type TextSection = {
 };
 export type Swatch = { id: string; code: string; name: string; src: string };
 export type CarouselImage = { id: string; label: string; src: string };
+export type SpotlightSection = {
+  eyebrow: string;
+  heading: string;
+  paragraphs: string[];
+  imageSrc: string;
+  supportingImages?: StyleCard[];
+};
 
 export type MaterialData = {
   slug: string;
@@ -22,6 +29,7 @@ export type MaterialData = {
   heroCta?: boolean;
   statLine?: string;
   midCtaHeading?: string;
+  newArrival?: SpotlightSection;
   gallery: GalleryItem[];
   galleryEyebrow?: string;
   galleryHeading?: string;
@@ -184,6 +192,35 @@ export const materials: MaterialData[] = [
     heroSrc: "/uploads/catalogue-pvc-2.jpg",
     description:
       "Panels with linear, fluted designs made of engineered composites with a natural wood finish — a great way to emphasise and bring focus onto a wall in an interior space. Durable and low-maintenance, with a full supplier finish catalogue so you can see every colour applied at scale.",
+    newArrival: {
+      eyebrow: "New Arrival",
+      heading: "Grooved PVC Panels — Geometric & Asymmetric",
+      imageSrc: "/uploads/cnc-fluted-panel-new-arrival.png",
+      paragraphs: [
+        "600mm × 2400mm grooved PVC panels with a bold, geometric line pattern that breaks up a flat wall with real asymmetry — no two panel runs read the same.",
+        "Available in two colourways: WTCNC2 (brown) and WTCNC3 (black), both finished with the same natural wood-grain texture as the rest of our fluted panel range.",
+      ],
+      supportingImages: [
+        {
+          id: "cnc-card-1",
+          title: "Living Room Feature Wall",
+          desc: "The geometric groove pattern run floor-to-ceiling behind a grey sectional.",
+          src: "/uploads/cnc-fluted-panel-lounge-wide.png",
+        },
+        {
+          id: "cnc-card-2",
+          title: "Two Colourways",
+          desc: "WTCNC2 (brown) and WTCNC3 (black) — both 600mm × 2400mm panels.",
+          src: "/uploads/cnc-fluted-panel-swatches.png",
+        },
+        {
+          id: "cnc-card-3",
+          title: "Grooved Detail",
+          desc: "A closer look at the fluted groove pattern and natural wood-grain finish.",
+          src: "/uploads/cnc-fluted-panel-detail.png",
+        },
+      ],
+    },
     galleryEyebrow: "Gallery",
     galleryHeading: "Fluted panels in place",
     galleryTagline: "Homes, hotels, offices and retail · supply or supply-and-install",

@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/hero";
+import { NewArrivalBanner } from "@/components/home/new-arrival-banner";
 import { ProofGallery } from "@/components/home/proof-gallery";
 import { ExploreMaterials } from "@/components/home/explore-materials";
 import { InstagramReels } from "@/components/home/instagram-reels";
@@ -13,6 +14,8 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden bg-white">
       <Hero />
+
+      <NewArrivalBanner />
 
       <ProofGallery />
 
