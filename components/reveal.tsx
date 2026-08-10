@@ -34,7 +34,7 @@ export function Reveal({
     <div
       ref={ref}
       className={`transition-[opacity,transform] duration-[800ms] ease-out ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-7 opacity-0"
+        visible ? "opacity-100" : "translate-y-7 opacity-0"
       } ${className}`}
     >
       {children}
