@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import { SolidButton } from "@/components/solid-button";
+import { BackHomeButton } from "@/components/back-home-button";
 
 export const metadata: Metadata = {
   title: "Portfolio — Real Installs in Pretoria & Durban",
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <div className="bg-white">
+      <BackHomeButton />
+
       <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-16 pt-24 lg:pt-[120px]">
         <div className="mb-5 flex items-center gap-2.5">
           <span className="h-px w-7 bg-brand" />

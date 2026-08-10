@@ -52,6 +52,9 @@ export const materials: MaterialData[] = [
       "That plain wall behind your sofa, your bed, your TV — it's one wall frame moulding installation away from being the room's focal point.",
     heroCta: true,
     midCtaHeading: "Ready to give your wall this treatment?",
+    galleryEyebrow: "Gallery",
+    galleryHeading: "Wall frame moulding in place",
+    galleryTagline: "Hallways, living rooms, bedrooms and feature walls",
     gallery: [
       { id: "wfm-1", label: "Box panel wainscoting, hallway view", src: "/uploads/wfm-hallway-wainscot.png" },
       { id: "wfm-2", label: "Panel wainscoting with wall sconces", src: "/uploads/wfm-wainscot-sconces.png" },
@@ -59,6 +62,9 @@ export const materials: MaterialData[] = [
       { id: "wfm-4", label: "Panel moulding wall, reading nook", src: "/uploads/wfm-panel-walllamp.png" },
       { id: "wfm-5", label: "Grid panel moulding, four-by-four", src: "/uploads/wfm-grid-panel.png" },
       { id: "wfm-6", label: "Floor-to-ceiling box moulding, living room", src: "/uploads/wfm-fullwall-hero.png" },
+      { id: "wfm-7", label: "Fluted panel accent, living room lounge", src: "/uploads/wfm-feature-lounge-fluted-accent-2.png" },
+      { id: "wfm-8", label: "Classic panel moulding, ornate cornice", src: "/uploads/catalogue-wallframe-2.jpg" },
+      { id: "wfm-9", label: "Panel moulding hallway, runner rug", src: "/uploads/wfm-hallway-runner-rug.jpg" },
     ],
     designCardsEyebrow: "Design Styles",
     designCards: [
@@ -97,11 +103,11 @@ export const materials: MaterialData[] = [
         eyebrow: "Feature Project",
         heading: "The brief: a plain wall, made the focal point",
         imageId: "wfm-feature-1",
-        imageSrc: "/uploads/wfm-feature-lounge-fluted-accent-2.png",
+        imageSrc: "/uploads/wfm-feature-hallway-mirror.jpg",
         paragraphs: [
-          "The brief called for a wall that could anchor a large, open-plan lounge without overpowering the furniture in front of it.",
-          "We paired classic box moulding on the outer panels with a fluted centre section, both run floor-to-ceiling in a soft neutral tone that matches the surrounding wall.",
-          "The mix of textures gives the room quiet depth — refined enough to sit behind a sculptural pendant light and a saturated accent chair without competing with either.",
+          "The brief called for something classic and elegant — a hallway that framed the room's furniture without competing with it.",
+          "We ran the moulding floor-to-ceiling in a crisp off-white, wrapping the full length of the passage so it reads as considered architecture rather than an applied decoration.",
+          "A gilt mirror and a period-style sofa give the space real presence, with the moulding as a quiet, consistent backdrop behind them.",
         ],
       },
     ],
@@ -209,14 +215,6 @@ export const materials: MaterialData[] = [
           "Suits any style — at home in minimalist, contemporary and Scandinavian interiors alike, from a home office to a boutique hotel.",
         ],
       },
-      {
-        eyebrow: "Panel Pricing",
-        heading: "R450 per panel",
-        paragraphs: [
-          "Each PVC fluted panel sells for R450 per panel.",
-          "To work out how many panels you'll need, divide the width of your wall (in cm) by 16. For example, for a 3m-wide wall: 300 ÷ 16 — that gives you the number of panels needed to cover the area.",
-        ],
-      },
     ],
     carouselEyebrow: "Finish Reference",
     carouselImages: [
@@ -248,6 +246,9 @@ export const materials: MaterialData[] = [
     description:
       "Feature wallpaper for residential and commercial spaces. Botanical prints, textured finishes, and full-wall installations, in over a hundred designs across texture and shade.",
     midCtaHeading: "Ready to give your wall this treatment?",
+    galleryEyebrow: "Gallery",
+    galleryHeading: "Wallpaper in place",
+    galleryTagline: "Bedrooms, living rooms and feature walls",
     gallery: [
       { id: "wp-1", label: "Geometric dot-print wallpaper, teal & gold", src: "/uploads/catalogue-wallpaper-1.jpg" },
       { id: "wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg" },
@@ -255,7 +256,6 @@ export const materials: MaterialData[] = [
       { id: "wp-4", label: "Crackle-pattern wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-4.jpg" },
       { id: "wp-5", label: "Honeycomb-pattern wallpaper, sage green", src: "/uploads/catalogue-wallpaper-5.jpg" },
       { id: "wp-6", label: "Fan-print wallpaper, olive & gold", src: "/uploads/catalogue-wallpaper-6.jpg" },
-      { id: "wp-7", label: "Medallion damask wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-7.jpg" },
       { id: "wp-8", label: "Damask-pattern wallpaper, gold on cream", src: "/uploads/catalogue-wallpaper-8.jpg" },
       { id: "wp-9", label: "Damask-pattern wallpaper, bedroom", src: "/uploads/catalogue-wallpaper-9.jpg" },
     ],
@@ -327,13 +327,18 @@ export const materials: MaterialData[] = [
       "Custom kitchen units and cabinetry, built to fit the room rather than the other way round.",
     heroCta: true,
     statLine: "Custom-built, made to fit",
+    galleryEyebrow: "Gallery",
+    galleryHeading: "Kitchen units in place",
+    galleryTagline: "Kitchens, bars, wardrobes and media walls",
     gallery: [
       { id: "ku-1", label: "Home bar cabinetry with backlit shelving", src: "/uploads/ku-home-bar.jpg" },
       { id: "ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg" },
-      { id: "ku-3", label: "Fluted wood panel wall, floating display shelf", src: "/uploads/catalogue-general-2.jpg" },
-      { id: "ku-4", label: "Walk-in wardrobe cabinetry, lit display shelving", src: "/uploads/ku-wardrobe-lit-shelving.jpg" },
-      { id: "ku-5", label: "Built-in media wall with backlit shelving", src: "/uploads/ku-media-wall-shelving.jpg" },
+      { id: "ku-3", label: "Grey gloss kitchen, open wood shelving", src: "/uploads/pf-kitchen-gloss.jpg" },
       { id: "ku-6", label: "Wet bar cabinetry, backlit fluted display", src: "/uploads/ku-wetbar-backlit-cabinetry.jpg", detail: "Matte charcoal base cabinetry beneath a backlit fluted display unit, with an integrated coffee station and freestanding fridge." },
+      { id: "ku-7", label: "Galley kitchen, black and white cabinetry", src: "/uploads/ku-galley-black-white.jpg", detail: "Floor-to-ceiling white gloss storage on one side, black gloss base and wall cabinets on the other, with integrated appliances throughout." },
+      { id: "ku-8", label: "White kitchen island, open wood shelving", src: "/uploads/ku-white-island-open-shelving.jpg", detail: "A white gloss island with bar seating, paired with open wood shelving and a matching wood-lined display niche." },
+      { id: "ku-9", label: "White gloss kitchen, backlit wood display", src: "/uploads/ku-white-gloss-backlit-display.jpg", detail: "Floor-to-ceiling white gloss cabinetry with a backlit wood-lined display niche and glass cabinet doors, grey base units below." },
+      { id: "ku-10", label: "White gloss kitchen, open wood shelving", src: "/uploads/ku-white-gloss-open-shelf-sink.jpg", detail: "White gloss wall and tower cabinetry with a backlit open wood shelf above the sink, integrated built-in ovens alongside." },
     ],
     extraSections: [
       {
@@ -352,7 +357,7 @@ export const materials: MaterialData[] = [
         eyebrow: "About Our Cabinetry",
         heading: "Wardrobes and built-ins, tailored to the space",
         imageId: "ku-about-cabinetry",
-        imageSrc: "/uploads/minimalist-kitchen-interior-design-2.jpg",
+        imageSrc: "/uploads/ku-wardrobe-lit-shelving.jpg",
         paragraphs: [
           "Beyond the kitchen, we build wardrobes and custom cabinetry for bedrooms, hallways, and living spaces — fitted to the exact dimensions of the room rather than adapted from standard sizes.",
           "Open shelving, mirrored fronts, soft-close drawers, and integrated lighting are worked into the design where they add function, not just for show.",
@@ -372,7 +377,19 @@ export const materials: MaterialData[] = [
       "Made from a special casting process that mimics the appearance and texture of real stone, PU stone cladding brings a stone-wall look to any space with none of the weight.",
     heroCta: true,
     statLine: "Lightweight, load-free stone look",
-    gallery: [],
+    galleryEyebrow: "Gallery",
+    galleryHeading: "PU stone in place",
+    galleryTagline: "Feature walls, TV walls, entrances and facades",
+    gallery: [
+      { id: "pu-gal-1", label: "PU stone accent wall, dark bedroom", src: "/uploads/pu-dark-bedroom-slab.jpg" },
+      { id: "pu-gal-2", label: "PU stone accent wall, living room", src: "/uploads/pu-living-room-olive.jpg" },
+      { id: "pu-gal-3", label: "PU stone feature wall, TV lounge", src: "/uploads/pu-tv-lounge-backlit.jpg" },
+      { id: "pu-gal-4", label: "PU stone TV wall, mixed wood and stone", src: "/uploads/pu-tv-wall-mixed.jpg" },
+      { id: "pu-gal-5", label: "PU stone arched niches, living room", src: "/uploads/pu-arched-niches.jpg" },
+      { id: "pu-gal-6", label: "PU stone accent strip, bedroom", src: "/uploads/pu-bedroom-accent-strip.jpg" },
+      { id: "pu-gal-7", label: "PU stone wall, pendant lighting, bedroom", src: "/uploads/pu-bedroom-pendant.jpg" },
+      { id: "pu-gal-8", label: "PU stone accent panel, TV nook", src: "/uploads/pu-tv-nook-backlit.jpg" },
+    ],
     extraSections: [
       {
         eyebrow: "Polyurethane (PU) Stone",
