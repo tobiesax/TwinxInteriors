@@ -57,15 +57,132 @@ export function ContactForm() {
       </div>
 
       <div>
-        <div className="mb-4 text-[13px] font-bold uppercase tracking-[0.1em] text-brand">Wall Design Option</div>
+        <div className="mb-4 text-[13px] font-bold uppercase tracking-[0.1em] text-brand">What Are You Looking For?</div>
         <div className="flex flex-col gap-[18px]">
-          <label className={checkboxLabelClasses}>
-            <input type="checkbox" name="wallDesignOptions" value="Wall Frame Moulding" className="h-4 w-4 accent-brand" /> Wall
-            Frame Moulding
-          </label>
-          <label className={checkboxLabelClasses}>
-            <input type="checkbox" name="wallDesignOptions" value="Accent Wall" className="h-4 w-4 accent-brand" /> Accent Wall
-          </label>
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">Wall Designs</div>
+            <div className="flex flex-col gap-2.5 pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input type="checkbox" name="wallDesignOptions" value="Wall Frame Moulding" className="h-[15px] w-[15px] accent-brand" />{" "}
+                Wall Frame Moulding
+              </label>
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input type="checkbox" name="wallDesignOptions" value="Accent Walls" className="h-[15px] w-[15px] accent-brand" />{" "}
+                Accent Walls
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">Kitchen Units</div>
+            <div className="flex flex-col gap-2.5 pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Kitchen Units — Existing Kitchen Redesign"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Existing Kitchen Redesign
+              </label>
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Kitchen Units — New Kitchen, Fresh Start"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                New Kitchen, Fresh Start
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">Walk-In Closet</div>
+            <div className="flex flex-col gap-2.5 pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Walk-In Closet — Existing Closet Redesign"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Existing Closet Redesign
+              </label>
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Walk-In Closet — New Closet, Fresh Start"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                New Closet, Fresh Start
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">TV Unit</div>
+            <div className="flex flex-col gap-2.5 pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="TV Unit — Existing TV Unit Redesign"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Existing TV Unit Redesign
+              </label>
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="TV Unit — New TV Unit, Fresh Start"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                New TV Unit, Fresh Start
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">BIC (Built-In Cabinet)</div>
+            <div className="flex flex-col gap-2.5 pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="BIC — Existing BIC Redesign"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Existing BIC Redesign
+              </label>
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="BIC — New BIC, Fresh Start"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                New BIC, Fresh Start
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2.5 text-sm font-bold text-ink">Custom Cabinetry Unit</div>
+            <div className="pl-1">
+              <label className="flex cursor-pointer items-center gap-2.5 text-[13.5px] text-[#4A4640]">
+                <input
+                  type="checkbox"
+                  name="wallDesignOptions"
+                  value="Custom Cabinetry Unit — Custom Design"
+                  className="h-[15px] w-[15px] accent-brand"
+                />{" "}
+                Custom Design
+              </label>
+            </div>
+          </div>
 
           <div>
             <div className="mb-2.5 text-sm font-bold text-ink">PVC Wall Panels</div>

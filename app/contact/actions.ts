@@ -61,7 +61,7 @@ export async function submitQuoteRequest(
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
     <p><strong>Wall size:</strong> ${escapeHtml(wallSize)}</p>
     <p><strong>Installation address:</strong> ${escapeHtml(address)}</p>
-    <p><strong>Wall design options:</strong></p>
+    <p><strong>Product interest:</strong></p>
     ${optionsHtml}
     <p><strong>Description:</strong></p>
     <p>${escapeHtml(description).replace(/\n/g, "<br>")}</p>
