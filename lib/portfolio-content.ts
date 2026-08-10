@@ -26,6 +26,8 @@ export const portfolioCategories: PortfolioCategory[] = [
     items: [
       { id: "pf-cl-1", label: "Walk-in closet, gold-trim wardrobes", src: "/uploads/IMG_3465.jpg" },
       { id: "pf-cl-2", label: "Walk-in closet, shoe shelving & vanity nook", src: "/uploads/IMG_8594.jpg" },
+      { id: "pf-cl-3", label: "Walk-in closet, white gloss wardrobes and island", src: "/uploads/pf-closet-island-white-gloss.png" },
+      { id: "pf-cl-4", label: "Walk-in closet, walnut vanity and round mirror", src: "/uploads/pf-closet-walnut-vanity-mirror.png" },
     ],
   },
   {
@@ -39,6 +41,7 @@ export const portfolioCategories: PortfolioCategory[] = [
       { id: "pf-mw-6", label: "TV media wall, backlit marble panel", src: "/uploads/pf-tv-unit-4.jpg" },
       { id: "pf-mw-7", label: "TV media wall, fluted panel with wet bar nook", src: "/uploads/pf-tv-unit-5.jpg" },
       { id: "pf-mw-8", label: "Wood-panelled TV wall, slat divider and fireplace nook", src: "/uploads/pf-tv-unit-6.jpg" },
+      { id: "pf-mw-9", label: "Marble TV wall with backlit glass display shelving", src: "/uploads/pf-tv-unit-8.jpg" },
     ],
   },
   {
