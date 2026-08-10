@@ -12,12 +12,13 @@ export const portfolioCategories: PortfolioCategory[] = [
     heading: "Feature Walls & Panelling",
     items: [
       { id: "pf-fw-1", label: "Panel wall with sculptural art, living room", src: "/uploads/IMG_1874.jpg" },
-      { id: "pf-fw-2", label: "Marble & slat TV feature wall", src: "/uploads/IMG_2399.jpg" },
       { id: "pf-fw-3", label: "Panelled wall, unfurnished room", src: "/uploads/IMG_3321.jpg" },
       { id: "pf-fw-4", label: "Pleated panel bedroom feature wall, black trim", src: "/uploads/IMG_4752.jpg" },
       { id: "pf-fw-5", label: "Textured stone-look accent wall", src: "/uploads/IMG_7096.jpg" },
       { id: "pf-fw-6", label: "Bedroom panel wall, LED accent lighting", src: "/uploads/IMG_7561.jpg" },
       { id: "pf-fw-7", label: "Panel moulding TV wall, backlit trim, living room", src: "/uploads/pf-fw-lounge-panel-tv.jpg" },
+      { id: "pf-fw-8", label: "Office corridor, panel moulding wainscoting", src: "/uploads/pf-fw-office-corridor-wainscot.jpg" },
+      { id: "pf-fw-9", label: "Grid panel wall with mirror, dining room", src: "/uploads/pf-fw-grid-panel-mirror-dining.jpg" },
     ],
   },
   {
