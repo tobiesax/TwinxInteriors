@@ -97,7 +97,23 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       {/* Gallery */}
       {data.gallery.length > 0 && (
         <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-14">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {data.galleryHeading && (
+            <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <div className="mb-5 flex items-center gap-2.5">
+                  <span className="h-px w-7 bg-brand" />
+                  <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
+                    {data.galleryEyebrow ?? "Gallery"}
+                  </span>
+                </div>
+                <h2 className="m-0 font-jost text-[clamp(30px,4vw,46px)] font-light uppercase leading-[1.1] text-ink">
+                  {data.galleryHeading}
+                </h2>
+              </div>
+              {data.galleryTagline && <p className="m-0 text-sm text-muted">{data.galleryTagline}</p>}
+            </div>
+          )}
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${data.galleryHeading ? "gap-1 lg:grid-cols-4" : "gap-5 lg:grid-cols-3"}`}>
             {data.gallery.map((item, i) => (
               <div
                 key={item.id}
@@ -107,18 +123,20 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
                 }}
                 className="group cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-1"
               >
-                <div className="relative h-[280px] overflow-hidden rounded-[3px] shadow-none transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)]">
+                <div className={`relative overflow-hidden rounded-[3px] shadow-none transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)] ${data.galleryHeading ? "aspect-square" : "h-[280px]"}`}>
                   <Image
                     src={item.src}
                     alt={item.label}
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
-                <div className="mt-3 text-[13px] text-muted transition-colors duration-300 group-hover:text-ink">
-                  {item.label}
-                </div>
+                {!data.galleryHeading && (
+                  <div className="mt-3 text-[13px] text-muted transition-colors duration-300 group-hover:text-ink">
+                    {item.label}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -195,7 +213,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       {/* Intro sections */}
       {data.introSections?.map((xs, i) => (
         <section key={i} className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20">
-          <div className="grid grid-cols-1 items-start gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
             <div>
               <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{xs.eyebrow}</div>
               <h2 className="mb-6 font-jost text-[clamp(24px,3vw,32px)] font-light uppercase leading-[1.2] text-ink">
@@ -224,10 +242,18 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
       {/* Design cards */}
       {data.designCards && data.designCards.length > 0 && (
         <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20 pt-24">
-          <div className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
-            {data.designCardsEyebrow ?? "Design Styles"}
+          <div className={data.designCardsHeading ? "mb-5 flex items-center gap-2.5" : "mb-3.5"}>
+            {data.designCardsHeading && <span className="h-px w-7 bg-brand" />}
+            <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
+              {data.designCardsEyebrow ?? "Design Styles"}
+            </span>
           </div>
-          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {data.designCardsHeading && (
+            <h2 className="m-0 mb-10 max-w-[640px] font-jost text-[clamp(30px,4vw,46px)] font-light uppercase leading-[1.1] text-ink">
+              {data.designCardsHeading}
+            </h2>
+          )}
+          <div className={`grid grid-cols-1 gap-7 sm:grid-cols-2 ${data.designCardsHeading ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
             {data.designCards.map((card, i) => (
               <div
                 key={card.id}
@@ -237,13 +263,13 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
                 }}
                 className="group cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-1"
               >
-                <div className="relative mb-5 h-[220px] overflow-hidden rounded-[3px] transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)]">
+                <div className={`relative mb-5 overflow-hidden rounded-[3px] transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)] ${data.designCardsHeading ? "aspect-[3/5]" : "h-[220px]"}`}>
                   <Image
                     src={card.src}
                     alt={card.title}
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <h3 className="m-0 mb-2.5 font-poppins text-[17px] font-bold uppercase text-ink">{card.title}</h3>
@@ -256,7 +282,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
 
       {/* Extra sections */}
       {data.extraSections?.map((xs, i) => (
-        <section key={i} className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20">
+        <section key={i} className={`mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-20 ${xs.extraMarginTop ? "mt-16" : ""}`}>
           {xs.imageSrc ? (
             <div className="grid grid-cols-1 items-center gap-16 border-t border-black/[0.08] pt-14 lg:grid-cols-2">
               <div className="relative h-[400px] overflow-hidden rounded-[3px]">

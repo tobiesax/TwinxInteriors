@@ -17,7 +17,7 @@ export default function PortfolioPage() {
           <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Real Work</span>
         </div>
         <h1 className="m-0 mb-5 max-w-[800px] font-jost text-[clamp(38px,5.5vw,64px)] font-light uppercase leading-[1.08] text-ink">
-          Completed installs, no renders.
+          Completed installs.
         </h1>
         <p className="m-0 max-w-[600px] text-[17px] leading-[1.7] text-muted">
           A look inside spaces Twinx has actually built — feature walls, wardrobes, media walls, and hallways across

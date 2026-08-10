@@ -6,6 +6,7 @@ export type TextSection = {
   imageId?: string;
   imageSrc?: string;
   paragraphs: string[];
+  extraMarginTop?: boolean;
 };
 export type Swatch = { id: string; code: string; name: string; src: string };
 export type CarouselImage = { id: string; label: string; src: string };
@@ -22,8 +23,12 @@ export type MaterialData = {
   statLine?: string;
   midCtaHeading?: string;
   gallery: GalleryItem[];
+  galleryEyebrow?: string;
+  galleryHeading?: string;
+  galleryTagline?: string;
   designCards?: StyleCard[];
   designCardsEyebrow?: string;
+  designCardsHeading?: string;
   introSections?: TextSection[];
   extraSections?: TextSection[];
   swatches?: Swatch[];
@@ -42,39 +47,38 @@ export const materials: MaterialData[] = [
     navBlurb: "Slat & panel feature walls",
     title: "Wall Frame Moulding",
     category: "Wall Decor",
-    heroSrc: "/uploads/catalogue-wallframe-1.jpg",
+    heroSrc: "/uploads/wfm-fullwall-hero.png",
     description:
       "That plain wall behind your sofa, your bed, your TV — it's one wall frame moulding installation away from being the room's focal point.",
     heroCta: true,
-    statLine: "Reference gallery",
     midCtaHeading: "Ready to give your wall this treatment?",
     gallery: [
-      { id: "wfm-1", label: "Panel moulding, living room wall", src: "/uploads/catalogue-wallframe-5.jpg" },
-      { id: "wfm-2", label: "Single profile box moulding", src: "/uploads/catalogue-general-1.jpg" },
-      { id: "wfm-3", label: "Double profile box moulding", src: "/uploads/catalogue-wallframe-3.jpg" },
-      { id: "wfm-4", label: "Feature wall", src: "/uploads/catalogue-wallframe-4.jpg" },
-      { id: "wfm-5", label: "Ornate cornice moulding detail", src: "/uploads/catalogue-wallframe-1.jpg" },
-      { id: "wfm-6", label: "Panel moulding wall, orange sofa", src: "/uploads/catalogue-wallframe-6.jpg" },
+      { id: "wfm-1", label: "Box panel wainscoting, hallway view", src: "/uploads/wfm-hallway-wainscot.png" },
+      { id: "wfm-2", label: "Panel wainscoting with wall sconces", src: "/uploads/wfm-wainscot-sconces.png" },
+      { id: "wfm-3", label: "Box panel moulding, pilaster surround", src: "/uploads/wfm-pilaster-surround.png" },
+      { id: "wfm-4", label: "Panel moulding wall, reading nook", src: "/uploads/wfm-panel-walllamp.png" },
+      { id: "wfm-5", label: "Grid panel moulding, four-by-four", src: "/uploads/wfm-grid-panel.png" },
+      { id: "wfm-6", label: "Floor-to-ceiling box moulding, living room", src: "/uploads/wfm-fullwall-hero.png" },
     ],
     designCardsEyebrow: "Design Styles",
     designCards: [
       {
         id: "wfm-style-single",
         title: "Single Profile Design",
-        desc: "A single-lined box, which can be divided into two boxes per column or stretched as one long box from top to bottom. Ask us which suits your wall.",
-        src: "/uploads/catalogue-general-1.jpg",
+        desc: "Tall rectangular panels repeat in an even column grid from floor to ceiling — a bold, graphic treatment for a living room feature wall. Ask us which suits your wall.",
+        src: "/uploads/wfm-grid-tallpanel-lounge.png",
       },
       {
         id: "wfm-style-double",
         title: "Double Profile Design",
-        desc: "A box within a bigger box — the outer box can carry a thicker profile than the inner one, or vice versa, in one long or two-box layout. Ask us which suits your wall.",
-        src: "/uploads/catalogue-wallframe-3.jpg",
+        desc: "A box within a bigger box, repeated in a full-height grid of panels — the outer box carries a thicker profile than the inner one for a more considered, layered look. Ask us which suits your wall.",
+        src: "/uploads/wfm-double-panel-dining.png",
       },
       {
         id: "wfm-style-half",
-        title: "Oval Panel Design",
-        desc: "Rounded, capsule-shaped panels run floor-to-ceiling in an evenly spaced column — a softer, more contemporary take on traditional box moulding. Ask us which suits your wall.",
-        src: "/uploads/catalogue-wallframe-5.jpg",
+        title: "Half Wall Design",
+        desc: "A single-lined box run along the lower wall at wainscot height — a classic, understated backdrop for a gallery wall or feature paint colour above. Ask us which suits your wall.",
+        src: "/uploads/wfm-single-wainscot-gallery.png",
       },
     ],
     extraSections: [
@@ -82,7 +86,7 @@ export const materials: MaterialData[] = [
         eyebrow: "About Our Wall Frames",
         heading: "Elevate your space, without sacrificing your art",
         imageId: "wfm-about-1",
-        imageSrc: "/uploads/catalogue-wallframe-6.jpg",
+        imageSrc: "/uploads/wfm-about-art-frames.png",
         paragraphs: [
           "Enhance the elegance of your walls effortlessly with our exquisite wall moulding frames, crafted from simple strips of wood trims. Embrace the sophisticated new look without sacrificing the ability to showcase your artwork — our wall frames seamlessly complement your paintings or pictures.",
           "We use top-notch wooden frames for every moulding installation, ensuring unparalleled reliability and strength. Our commitment to uncompromising quality is unwavering, and we offer our exceptional service at highly affordable rates.",
@@ -93,11 +97,11 @@ export const materials: MaterialData[] = [
         eyebrow: "Feature Project",
         heading: "The brief: a plain wall, made the focal point",
         imageId: "wfm-feature-1",
-        imageSrc: "/uploads/catalogue-wallframe-4.jpg",
+        imageSrc: "/uploads/wfm-feature-lounge-fluted-accent-2.png",
         paragraphs: [
-          "The brief called for something classic and elegant — a wall that framed the room's furniture without competing with it.",
-          "We ran the moulding floor-to-ceiling in a soft neutral tone, closely matched to the surrounding walls, so it reads as considered architecture rather than an applied decoration.",
-          "A double box profile carried around the full-height mirror panel gives the space quiet presence — refined, not loud.",
+          "The brief called for a wall that could anchor a large, open-plan lounge without overpowering the furniture in front of it.",
+          "We paired classic box moulding on the outer panels with a fluted centre section, both run floor-to-ceiling in a soft neutral tone that matches the surrounding wall.",
+          "The mix of textures gives the room quiet depth — refined enough to sit behind a sculptural pendant light and a saturated accent chair without competing with either.",
         ],
       },
     ],
@@ -115,25 +119,36 @@ export const materials: MaterialData[] = [
     description:
       "The wall behind your sofa, your bed, your TV doesn't have to stay plain. Dowel patterns, geometric 3D panels, diamond lattice, diagonal sticks: a statement accent wall turns it into the room's focal point.",
     heroCta: true,
-    statLine: "Reference gallery",
     midCtaHeading: "Ready to give your wall this treatment?",
+    galleryEyebrow: "Gallery",
+    galleryHeading: "Accent walls in place",
     // 4 gallery slots (aw-1, aw-2, aw-3, aw-5) and 2 design cards (aw-style-dowel, aw-style-3d)
     // were removed — they were stock box/grid-moulding photos, not genuine accent-wall patterns
     // (dowel, geometric 3D, lattice). Re-add once real accent-wall photos come in.
     gallery: [
-      { id: "aw-4", label: "Slat panel accent wall, armchair pair", src: "/uploads/catalogue-accentwall-4.jpg", detail: "Floor-to-ceiling slat panelling in a blue-grey tone, framed by an arched window and a pair of accent chairs." },
+      { id: "aw-4", label: "Slat panel accent wall", src: "/uploads/aw-4-zoomed.jpg", detail: "Floor-to-ceiling slat panelling in a blue-grey tone, framed by an arched window." },
       { id: "aw-6", label: "Wood slat panel, mixed-texture wall", src: "/uploads/catalogue-accentwall-6.jpg", detail: "A vertical wood slat panel set beside a textured plaster wall section, framing a side table and sofa nook." },
+      { id: "aw-7", label: "Fluted wood panel, backlit warm glow", src: "/uploads/aw-fluted-backlit.png", detail: "Vertical fluted wood panelling lit from above with a warm LED strip, adding depth and texture to a plain wall." },
+      { id: "aw-8", label: "Linear panel wall, minimalist", src: "/uploads/aw-linear-minimalist.png", detail: "Simple vertical and horizontal panel lines finished in off-white, paired with articulating wall sconces for a quiet, considered accent wall." },
+      { id: "aw-9", label: "Fluted panel wall, navy finish", src: "/uploads/aw-fluted-navy.png", detail: "Vertical fluted panelling in a deep navy tone, fitted with a brass two-arm wall sconce for a moody bedroom accent wall." },
+      { id: "aw-10", label: "Arched linear panel wall, cream finish", src: "/uploads/aw-arch-linear-cream.png", detail: "Abstract arch and rectangle panel lines in a soft cream finish — a sculptural, gallery-like accent wall treatment." },
+      { id: "aw-11", label: "Grid panel accent wall, forest green", src: "/uploads/aw-grid-panel-green.png", detail: "An even grid of square box panels in a deep forest green, framing a piece of art as the wall's centrepiece." },
+      { id: "aw-12", label: "Wainscot panel wall, navy finish", src: "/uploads/aw-wainscot-entryway.jpg", detail: "Box panel wainscoting in a deep navy finish, run along the lower half of an entryway wall beneath framed art." },
     ],
-    designCardsEyebrow: "Pattern Options",
+    designCardsEyebrow: "02 · Accent Walls",
+    designCardsHeading: "Signature accent designs",
     designCards: [
-      { id: "aw-style-lattice", title: "Wood Slat Panel", desc: "A vertical wood slat pattern, often paired with a mirror or art piece, for a refined textured backdrop.", src: "/uploads/catalogue-accentwall-6.jpg" },
+      { id: "aw-style-linear", title: "Linear Detail", desc: "Floor-to-ceiling feature wall with vertical and horizontal lines.", src: "/uploads/aw-linear-detail-3.png" },
+      { id: "aw-style-geometric", title: "Geometric", desc: "Angular frames and intersecting lines for instant depth.", src: "/uploads/aw-geometric-chevron.png" },
+      { id: "aw-style-waterfall", title: "Waterfall Illusion", desc: "Irregular vertical strips cascade down the wall like flowing water — a single-tone design with real movement.", src: "/uploads/aw-waterfall-illusion.png" },
+      { id: "aw-style-golden", title: "Golden Strips", desc: "Minimalist strip detailing — installed in Limpopo.", src: "/uploads/aw-golden-strips-grid.png" },
     ],
     introSections: [
       {
         eyebrow: "About Our Accent Walls",
         heading: "One wall, made the whole room's talking point",
         imageId: "aw-about-1",
-        imageSrc: "/uploads/catalogue-accentwall-4.jpg",
+        imageSrc: "/uploads/aw-about-vertical-slat-divider.jpg",
         paragraphs: [
           "The accent wall is back, not just indoors, but outdoors too, shaped into an endless range of forms and colours that give a flat wall real dimension and depth.",
           "It's found favour again with households and businesses alike, as an easy way to bring an extra layer of style and personality into a space.",
@@ -163,11 +178,22 @@ export const materials: MaterialData[] = [
     heroSrc: "/uploads/catalogue-pvc-2.jpg",
     description:
       "Panels with linear, fluted designs made of engineered composites with a natural wood finish — a great way to emphasise and bring focus onto a wall in an interior space. Durable and low-maintenance, with a full supplier finish catalogue so you can see every colour applied at scale.",
-    statLine: "Look gallery",
+    galleryEyebrow: "Gallery",
+    galleryHeading: "Fluted panels in place",
+    galleryTagline: "Homes, hotels, offices and retail · supply or supply-and-install",
     gallery: [
-      { id: "pvc-install-1", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg" },
+      { id: "pvc-install-1", label: "Slatted panel wall, grey finish", src: "/uploads/catalogue-pvc-2.jpg" },
       { id: "pvc-install-2", label: "Fluted panel with pendant lighting", src: "/uploads/catalogue-pvc-1.jpg" },
       { id: "pvc-install-3", label: "Fluted panel, side-table vignette", src: "/uploads/catalogue-pvc-3.jpg" },
+      { id: "pvc-install-4", label: "Fluted panel wall, backlit warm glow", src: "/uploads/pvc-fluted-backlit.png" },
+      { id: "pvc-install-5", label: "Fluted panel accent, living room", src: "/uploads/pvc-fluted-living.png" },
+      { id: "pvc-install-6", label: "Fluted panel wall, navy finish", src: "/uploads/pvc-fluted-navy.png" },
+      { id: "pvc-install-7", label: "Chevron panel wall, grey finish", src: "/uploads/pvc-chevron-grey.png" },
+      { id: "pvc-install-8", label: "Grid panel wall, forest green", src: "/uploads/pvc-grid-green.png" },
+      { id: "pvc-install-9", label: "Panel wall with fluted pilaster surround", src: "/uploads/pvc-fluted-pilaster.png" },
+      { id: "pvc-install-10", label: "Arched panel wall, cream finish", src: "/uploads/pvc-arch-panel-cream.png" },
+      { id: "pvc-install-11", label: "Panel wall, gallery styling", src: "/uploads/pvc-panel-gallery-wall.png" },
+      { id: "pvc-install-12", label: "Fluted panel wall, arched nook", src: "/uploads/pvc-fluted-arch-grey-sofa.jpg" },
     ],
     extraSections: [
       {
@@ -194,15 +220,15 @@ export const materials: MaterialData[] = [
     ],
     carouselEyebrow: "Finish Reference",
     carouselImages: [
-      { id: "pvc-ref-3", label: "Finish reference — charcoal slat, living room", src: "/uploads/pvc-catalog-p3.png" },
-      { id: "pvc-ref-4", label: "Finish reference — grey slat, media wall", src: "/uploads/pvc-catalog-p4.png" },
-      { id: "pvc-ref-5", label: "Finish reference — black slat, bedroom", src: "/uploads/pvc-catalog-p5.png" },
-      { id: "pvc-ref-6", label: "Finish reference — oak slat, entry door", src: "/uploads/pvc-catalog-p6.png" },
-      { id: "pvc-ref-7", label: "Finish reference — grey slat, TV feature wall", src: "/uploads/pvc-catalog-p7.png" },
-      { id: "pvc-ref-9", label: "Finish reference — grey slat, hallway", src: "/uploads/pvc-catalog-p9.png" },
+      { id: "pvc-ref-3", label: "Finish reference — charcoal slat, living room", src: "/uploads/pvc-catalog-p3-hd.jpg" },
+      { id: "pvc-ref-4", label: "Finish reference — grey slat, media wall", src: "/uploads/pvc-catalog-p4-hd.jpg" },
+      { id: "pvc-ref-5", label: "Finish reference — black slat, bedroom", src: "/uploads/pvc-catalog-p5-hd.jpg" },
+      { id: "pvc-ref-6", label: "Finish reference — oak slat, entry door", src: "/uploads/pvc-catalog-p6-hd.jpg" },
+      { id: "pvc-ref-7", label: "Finish reference — grey slat, TV feature wall", src: "/uploads/pvc-catalog-p7-hd.jpg" },
+      { id: "pvc-ref-9", label: "Finish reference — grey slat, hallway", src: "/uploads/pvc-catalog-p9-hd.jpg" },
     ],
     swatches: [
-      { id: "sw-wt164", code: "WT164", name: "Black Marble, Gold Strips", src: "/uploads/pvc-catalog-p8.png" },
+      { id: "sw-wt164", code: "WT164", name: "Black Marble", src: "/uploads/pvc-catalog-p8.png" },
       { id: "sw-oak", code: "", name: "Oak", src: "/uploads/pvc-oak-v2.jpeg" },
       { id: "sw-walnut-black", code: "", name: "Walnut & Black", src: "/uploads/pvc-walnut-black-v2.jpeg" },
       { id: "sw-oak-black", code: "", name: "Oak & Black", src: "/uploads/pvc-oak-black-v2.jpeg" },
@@ -221,7 +247,6 @@ export const materials: MaterialData[] = [
     heroSrc: "/uploads/catalogue-wallpaper-9.jpg",
     description:
       "Feature wallpaper for residential and commercial spaces. Botanical prints, textured finishes, and full-wall installations, in over a hundred designs across texture and shade.",
-    statLine: "Reference gallery",
     midCtaHeading: "Ready to give your wall this treatment?",
     gallery: [
       { id: "wp-1", label: "Geometric dot-print wallpaper, teal & gold", src: "/uploads/catalogue-wallpaper-1.jpg" },
@@ -308,11 +333,13 @@ export const materials: MaterialData[] = [
       { id: "ku-3", label: "Fluted wood panel wall, floating display shelf", src: "/uploads/catalogue-general-2.jpg" },
       { id: "ku-4", label: "Walk-in wardrobe cabinetry, lit display shelving", src: "/uploads/ku-wardrobe-lit-shelving.jpg" },
       { id: "ku-5", label: "Built-in media wall with backlit shelving", src: "/uploads/ku-media-wall-shelving.jpg" },
+      { id: "ku-6", label: "Wet bar cabinetry, backlit fluted display", src: "/uploads/ku-wetbar-backlit-cabinetry.jpg", detail: "Matte charcoal base cabinetry beneath a backlit fluted display unit, with an integrated coffee station and freestanding fridge." },
     ],
     extraSections: [
       {
         eyebrow: "About Our Kitchens",
         heading: "Built around how you actually use the room",
+        extraMarginTop: true,
         imageId: "ku-about-kitchen",
         imageSrc: "/uploads/beautiful-kitchen-interior-design.jpg",
         paragraphs: [

@@ -3,14 +3,14 @@ export type ProofItem = { id: string; label: string; src: string; detail: string
 // One representative photo per service — no category repeated, none skipped.
 export const proofItems: ProofItem[] = [
   { id: "pf-wfm-4", label: "Feature wall", src: "/uploads/catalogue-wallframe-4.jpg", detail: "A plain wall turned into the room's focal point — the moulding frames the space beneath it without competing for attention." },
-  { id: "pf-aw-5", label: "Fluted wood accent wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Fluted wood panelling shaped into a textured accent wall — a warm, tactile finish with real depth and dimension." },
-  { id: "pf-pvc-2", label: "Fluted wood-finish panel wall", src: "/uploads/catalogue-pvc-2.jpg", detail: "Fluted PVC wall panelling with a natural wood finish — water-resistant and low-maintenance, priced per panel." },
+  { id: "pf-aw-5", label: "Layered panel moulding wall", src: "/uploads/catalogue-accentwall-5.jpg", detail: "Multi-lined box moulding in a deep charcoal finish, arranged as three tall concentric frames for a bold, architectural accent wall." },
+  { id: "pf-pvc-2", label: "Slatted panel wall, grey finish", src: "/uploads/catalogue-pvc-2.jpg", detail: "Vertical slat PVC wall panelling in a grey finish — water-resistant and low-maintenance, priced per panel." },
   { id: "pf-wp-2", label: "Textured neutral wallpaper", src: "/uploads/catalogue-wallpaper-2.jpg", detail: "A textured wallpaper finish from our imported range — see and feel it in person before you commit to a room." },
   { id: "pf-ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg", detail: "Custom-built kitchen cabinetry finished in matte grey with open shelving — bespoke joinery designed around how the space is actually used." },
-  { id: "pf-pu-5", label: "PU stone panel, living room", src: "/uploads/catalogue-pustone-5.jpg", detail: "Full-wall PU stone cladding in a living space, bringing texture and depth without the weight of natural stone." },
-  { id: "pf-wic-1", label: "Walk-in closet, gold-trim wardrobes", src: "/uploads/IMG_3465.jpg", detail: "A full walk-in closet fit-out in soft grey and walnut, finished with brass hardware and a lit glass display cabinet." },
-  { id: "pf-bar-1", label: "Home bar cabinetry", src: "/uploads/IMG_0425.jpg", detail: "Custom bar cabinetry with backlit fluted panelling — bespoke joinery built around glassware and display." },
-  { id: "pf-gen-1", label: "TV unit, wood slat wall", src: "/uploads/pf-tv-unit-slat.jpg", detail: "A floating TV unit and shelving built into a wood slat feature wall, with integrated lighting on every shelf." },
+  { id: "pf-pu-5", label: "PU stone panel, bedroom", src: "/uploads/catalogue-pustone-5.jpg", detail: "Full-wall PU stone cladding in a bedroom, bringing texture and depth without the weight of natural stone." },
+  { id: "pf-wic-1", label: "Walk-in closet, backlit shoe shelving", src: "/uploads/pf-wic-backlit-shelving.jpg", detail: "Floor-to-ceiling wardrobe doors in matte charcoal, paired with a backlit oak shelving tower built for shoe display and a full-length mirror door." },
+  { id: "pf-bar-1", label: "Home bar cabinetry", src: "/uploads/pf-bar-fluted-panelling.jpg", detail: "Custom bar cabinetry with backlit fluted panelling — bespoke joinery built around glassware and display." },
+  { id: "pf-gen-1", label: "TV unit, wood slat wall", src: "/uploads/pf-tv-unit-slat-2.jpg", detail: "A wall-mounted TV set into a backlit wood-slat feature wall, paired with an open black shelving unit for books and display pieces." },
 ];
 
 export type ProcessStep = { n: string; title: string; desc: string };
