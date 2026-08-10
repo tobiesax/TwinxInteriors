@@ -16,20 +16,29 @@ export function PortfolioGallery() {
     <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-10">
       {portfolioCategories.map((cat) => (
         <div key={cat.key} className="mb-20 last:mb-0">
-          <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.1em] text-muted-2">{cat.heading}</div>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          <div className="mb-10 flex items-center gap-2.5">
+            <span className="h-px w-7 bg-brand" />
+            <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Gallery</span>
+          </div>
+          <h2 className="m-0 mb-10 font-jost text-[clamp(30px,4vw,46px)] font-light uppercase leading-[1.1] text-ink">
+            {cat.heading}
+          </h2>
+          <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
             {cat.items.map((item) => (
-              <div key={item.id} onClick={() => setActiveId(item.id)} className="group cursor-pointer">
-                <div className="relative h-[320px] overflow-hidden rounded-[3px] sm:h-[260px] lg:h-[280px]">
+              <div
+                key={item.id}
+                onClick={() => setActiveId(item.id)}
+                className="group cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-1"
+              >
+                <div className="relative aspect-square overflow-hidden rounded-[3px] shadow-none transition-shadow duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.14)]">
                   <Image
                     src={item.src}
                     alt={item.label}
                     fill
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
-                <div className="mt-2.5 text-[13px] text-muted">{item.label}</div>
               </div>
             ))}
           </div>
