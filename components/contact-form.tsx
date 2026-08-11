@@ -26,8 +26,8 @@ export function ContactForm() {
         <div className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">Thank You</div>
         <h3 className="m-0 font-jost text-2xl font-light uppercase text-ink">We&apos;ve got your brief.</h3>
         <p className="m-0 text-sm leading-[1.7] text-muted">
-          Thanks for reaching out — a member of the Twinx team will be in touch shortly with a quote and timeline for
-          your space.
+          Thanks for reaching out — one of Twinx team will be in touch shortly with a quote and timeline for your
+          space.
         </p>
       </div>
     );
