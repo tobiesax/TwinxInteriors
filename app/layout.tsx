@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   },
   description:
     "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across Pretoria and Durban. Get a quote from Twinx Interiors.",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "wall moulding Pretoria",
     "accent wall installation Durban",

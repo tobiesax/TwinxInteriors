@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contact — Get a Quote in Pretoria or Durban",
   description:
     "Request a quote for wall moulding, accent walls, PVC panelling, wallpaper, kitchen cabinetry or PU stone cladding. Twinx Interiors studios in Pretoria and Durban.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

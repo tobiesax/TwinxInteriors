@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Portfolio — Real Installs Across South Africa",
   description:
     "Completed wall moulding, accent wall, wardrobe and media wall installs across South Africa — real projects, no renders. See the Twinx Interiors portfolio.",
+  alternates: {
+    canonical: "/portfolio",
+  },
 };
 
 export default function PortfolioPage() {

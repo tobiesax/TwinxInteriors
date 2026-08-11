@@ -15,6 +15,9 @@ export async function generateMetadata(props: PageProps<"/materials/[slug]">): P
   return {
     title,
     description: data.description,
+    alternates: {
+      canonical: `/materials/${slug}`,
+    },
     openGraph: {
       title: `${title} | Twinx Interiors`,
       description: data.description,
