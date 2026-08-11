@@ -2,10 +2,7 @@
 
 import { Resend } from "resend";
 
-// TEMPORARY: Resend's sending domain (twinxinteriors.co.za) isn't verified yet, so it can only
-// deliver to the Resend account owner's own address. Switch this to Info@twinxinteriors.co.za
-// once the domain shows "Verified" at resend.com/domains.
-const TO_EMAIL = "tobisax@gmail.com";
+const TO_EMAIL = "Info@twinxinteriors.co.za";
 
 export type SubmitQuoteState = {
   status: "idle" | "success" | "error";
@@ -69,7 +66,7 @@ export async function submitQuoteRequest(
 
   try {
     const { error } = await resend.emails.send({
-      from: "Twinx Website <onboarding@resend.dev>",
+      from: "Twinx Website <info@twinxinteriors.co.za>",
       to: TO_EMAIL,
       replyTo: email || undefined,
       subject: `New quote request — ${firstName} ${lastName}`.trim(),
