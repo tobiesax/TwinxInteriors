@@ -10,7 +10,7 @@ export function NewArrivalBanner() {
         className="group relative mx-auto block h-[320px] max-w-[1400px] overflow-hidden rounded-[3px] text-white no-underline sm:h-[380px] lg:h-[440px]"
       >
         <Image
-          src="/uploads/cnc-fluted-panel-new-arrival.png"
+          src="/uploads/cnc-fluted-panel-new-arrival.jpg"
           alt="Grooved PVC Panels"
           fill
           priority

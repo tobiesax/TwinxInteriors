@@ -27,8 +27,8 @@ export const portfolioCategories: PortfolioCategory[] = [
     items: [
       { id: "pf-cl-1", label: "Walk-in closet, gold-trim wardrobes", src: "/uploads/IMG_3465.jpg" },
       { id: "pf-cl-2", label: "Walk-in closet, shoe shelving & vanity nook", src: "/uploads/pf-closet-shoe-shelving-vanity-nook.jpg" },
-      { id: "pf-cl-3", label: "Walk-in closet, white gloss wardrobes and island", src: "/uploads/pf-closet-island-white-gloss.png" },
-      { id: "pf-cl-4", label: "Walk-in closet, walnut vanity and round mirror", src: "/uploads/pf-closet-walnut-vanity-mirror.png" },
+      { id: "pf-cl-3", label: "Walk-in closet, white gloss wardrobes and island", src: "/uploads/pf-closet-island-white-gloss.jpg" },
+      { id: "pf-cl-4", label: "Walk-in closet, walnut vanity and round mirror", src: "/uploads/pf-closet-walnut-vanity-mirror.jpg" },
     ],
   },
   {
