@@ -23,6 +23,7 @@ export async function submitQuoteRequest(
 ): Promise<SubmitQuoteState> {
   // Honeypot: real visitors never fill this hidden field in.
   if (formData.get("hp-field")) {
+    console.warn("Contact form honeypot triggered — submission blocked without sending email.");
     return { status: "success" };
   }
 
