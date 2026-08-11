@@ -2,6 +2,7 @@
 
 import { SolidButton } from "@/components/solid-button";
 import { FlowButton } from "@/components/flow-button";
+import { SocialIcons } from "@/components/social-icons";
 
 export function Hero() {
   return (
@@ -48,32 +49,10 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-7 right-5 z-[2] flex items-center gap-3 sm:right-8 lg:right-12 lg:bottom-[60px]">
-        <a
-          href="https://www.instagram.com/twinxinteriors"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twinx Interiors on Instagram"
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/[0.08] text-white backdrop-blur-[6px] transition-colors duration-200 hover:bg-white hover:text-ink"
-        >
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="5" />
-            <circle cx="12" cy="12" r="4.3" />
-            <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-        <a
-          href="https://www.tiktok.com/@twinxinteriors"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twinx Interiors on TikTok"
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/[0.08] text-white backdrop-blur-[6px] transition-colors duration-200 hover:bg-white hover:text-ink"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16.6 5.82c-.87-.96-1.35-2.2-1.35-3.5h-3.07v13.6a2.9 2.9 0 1 1-2.05-2.77v-3.13a6 6 0 1 0 5.12 5.93V9.4a6.7 6.7 0 0 0 3.9 1.25V7.6a3.9 3.9 0 0 1-2.55-1.78Z" />
-          </svg>
-        </a>
-      </div>
+      <SocialIcons
+        className="absolute bottom-7 right-5 z-[2] hidden lg:flex lg:right-12 lg:bottom-[60px]"
+        linkClassName="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/[0.08] text-white backdrop-blur-[6px] transition-colors duration-200 hover:bg-white hover:text-ink"
+      />
 
       <a
         href="#how-we-work"

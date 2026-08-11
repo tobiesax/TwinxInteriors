@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/hero";
 import { NewArrivalBanner } from "@/components/home/new-arrival-banner";
 import { ProofGallery } from "@/components/home/proof-gallery";
+import { SocialIcons } from "@/components/social-icons";
 import { ExploreMaterials } from "@/components/home/explore-materials";
 import { InstagramReels } from "@/components/home/instagram-reels";
 import { ClientLogoMarquee } from "@/components/home/client-logo-marquee";
@@ -14,6 +15,10 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden bg-white">
       <Hero />
+
+      <div className="relative z-10 -mt-5 flex justify-center lg:hidden">
+        <SocialIcons linkClassName="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink shadow-[0_4px_14px_rgba(0,0,0,0.15)] transition-colors duration-200 hover:bg-brand hover:text-white" />
+      </div>
 
       <ProofGallery />
 

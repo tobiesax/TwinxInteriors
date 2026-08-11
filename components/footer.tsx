@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { materials } from "@/lib/materials";
+import { SocialIcons } from "@/components/social-icons";
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -28,32 +29,7 @@ export function Footer() {
             <p className="m-0 mb-5 text-[13px] uppercase leading-[1.7] text-[#B5B0AA]">
               Don&apos;t move&hellip; Twinx it.
             </p>
-            <div className="flex items-center gap-3.5">
-              <a
-                href="https://www.instagram.com/twinxinteriors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twinx Interiors on Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[#B5B0AA] transition-colors duration-200 hover:border-brand hover:text-brand"
-              >
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                  <rect x="2.5" y="2.5" width="19" height="19" rx="5" />
-                  <circle cx="12" cy="12" r="4.3" />
-                  <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" />
-                </svg>
-              </a>
-              <a
-                href="https://www.tiktok.com/@twinxinteriors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twinx Interiors on TikTok"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[#B5B0AA] transition-colors duration-200 hover:border-brand hover:text-brand"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M16.6 5.82c-.87-.96-1.35-2.2-1.35-3.5h-3.07v13.6a2.9 2.9 0 1 1-2.05-2.77v-3.13a6 6 0 1 0 5.12 5.93V9.4a6.7 6.7 0 0 0 3.9 1.25V7.6a3.9 3.9 0 0 1-2.55-1.78Z" />
-                </svg>
-              </a>
-            </div>
+            <SocialIcons linkClassName="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[#B5B0AA] transition-colors duration-200 hover:border-brand hover:text-brand" />
           </div>
 
           <div>
