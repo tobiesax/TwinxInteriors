@@ -15,8 +15,6 @@ export default function HomePage() {
     <div className="overflow-hidden bg-white">
       <Hero />
 
-      <NewArrivalBanner />
-
       <ProofGallery />
 
       <section id="how-we-work" className="relative border-y border-black/[0.06] bg-white px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px]">
@@ -56,6 +54,8 @@ export default function HomePage() {
           Request a Quote
         </FlowButton>
       </section>
+
+      <NewArrivalBanner />
 
       <ExploreMaterials />
 

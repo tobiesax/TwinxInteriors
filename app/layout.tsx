@@ -77,7 +77,7 @@ const jsonLd = [
       addressCountry: "ZA",
     },
     areaServed: ["Pretoria", "Gauteng"],
-    sameAs: [],
+    sameAs: ["https://www.instagram.com/twinxinteriors", "https://www.tiktok.com/@twinxinteriors"],
   },
   {
     "@context": "https://schema.org",
@@ -95,7 +95,7 @@ const jsonLd = [
       addressCountry: "ZA",
     },
     areaServed: ["Durban", "KwaZulu-Natal"],
-    sameAs: [],
+    sameAs: ["https://www.instagram.com/twinxinteriors", "https://www.tiktok.com/@twinxinteriors"],
   },
 ];
 
