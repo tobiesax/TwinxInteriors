@@ -22,7 +22,7 @@ export function PageTransition({ children }: { children: React.ReactNode }) {
 
   return (
     <div
-      className={`transition-[opacity,transform] duration-500 ease-out ${
+      className={`isolate transition-[opacity,transform] duration-500 ease-out ${
         visible ? "opacity-100" : "translate-y-3 opacity-0"
       }`}
     >

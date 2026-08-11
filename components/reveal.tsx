@@ -33,7 +33,7 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={`transition-[opacity,transform] duration-[800ms] ease-out ${
+      className={`isolate transition-[opacity,transform] duration-[800ms] ease-out ${
         visible ? "opacity-100" : "translate-y-7 opacity-0"
       } ${className}`}
     >
