@@ -13,7 +13,6 @@ export function Hero() {
           loop
           muted
           playsInline
-          poster="/uploads/hero-video-mobile-portrait-v2-poster.jpg"
           src="/uploads/hero-video-mobile-portrait-v2.mp4"
           className="absolute inset-0 h-full w-full object-cover lg:hidden"
         />
@@ -23,7 +22,6 @@ export function Hero() {
           loop
           muted
           playsInline
-          poster="/uploads/hero-video-3-poster.jpg"
           src="/uploads/hero-video-3.mp4"
           className="absolute inset-0 hidden h-full w-full object-cover lg:block"
         />
