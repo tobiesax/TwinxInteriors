@@ -72,7 +72,6 @@ export const materials: MaterialData[] = [
       { id: "wfm-6", label: "Floor-to-ceiling box moulding, living room", src: "/uploads/wfm-fullwall-hero.png" },
       { id: "wfm-7", label: "Fluted panel accent, living room lounge", src: "/uploads/wfm-feature-lounge-fluted-accent-2.png" },
       { id: "wfm-8", label: "Classic panel moulding, ornate cornice", src: "/uploads/catalogue-wallframe-2.jpg" },
-      { id: "wfm-9", label: "Panel moulding hallway, runner rug", src: "/uploads/wfm-hallway-runner-rug.jpg" },
     ],
     designCardsEyebrow: "Design Styles",
     designCards: [
@@ -155,7 +154,7 @@ export const materials: MaterialData[] = [
       { id: "aw-style-linear", title: "Linear Detail", desc: "Floor-to-ceiling feature wall with vertical and horizontal lines.", src: "/uploads/aw-linear-detail-3.png" },
       { id: "aw-style-geometric", title: "Geometric", desc: "Angular frames and intersecting lines for instant depth.", src: "/uploads/aw-geometric-chevron.png" },
       { id: "aw-style-waterfall", title: "Waterfall Illusion", desc: "Irregular vertical strips cascade down the wall like flowing water — a single-tone design with real movement.", src: "/uploads/aw-waterfall-illusion.png" },
-      { id: "aw-style-golden", title: "Golden Strips", desc: "Minimalist strip detailing — installed in Limpopo.", src: "/uploads/aw-golden-strips-grid.png" },
+      { id: "aw-style-golden", title: "Boxed Accent Wall Panelling", desc: "Minimalist strip detailing.", src: "/uploads/aw-golden-strips-grid.png" },
     ],
     introSections: [
       {
@@ -177,7 +176,7 @@ export const materials: MaterialData[] = [
         imageId: "aw-feature-1",
         imageSrc: "/uploads/catalogue-accentwall-7.jpg",
         paragraphs: [
-          "A project for a client in Limpopo, a plain media wall lifted with nothing more than golden strips for a little detail and elegance.",
+          "A plain media wall lifted with nothing more than golden strips for a little detail and elegance.",
           "The result is a feature wall with real presence, without ever feeling over-designed.",
         ],
       },
