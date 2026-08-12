@@ -322,7 +322,7 @@ export const materials: MaterialData[] = [
         imageSrc: "/uploads/catalogue-wallpaper-1.jpg",
         paragraphs: [
           "We keep full wallpaper sample books — see and feel every design before you decide. Browse the complete range at either studio, or ask us to bring the sample books to your consultation and select from actual samples in your own space and light.",
-          "Contact Kenny on 012 004 0919 or 084 672 7415 (call or WhatsApp) to book.",
+          "Contact us on 012 004 0919 or 084 672 7415 (call or WhatsApp) to book.",
         ],
       },
       {

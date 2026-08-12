@@ -3,7 +3,22 @@
 import { useActionState } from "react";
 import { submitQuoteRequest, type SubmitQuoteState } from "@/app/contact/actions";
 
-const pvcColors = ["Black W61", "Marble W78", "Blue W75", "Charcoal W73", "Light Grey W62", "Oak Brown W34"];
+const pvcColors = [
+  "Black W61",
+  "Marble W78",
+  "Blue W75",
+  "Charcoal W73",
+  "Light Grey W62",
+  "Oak Brown W34",
+  "Plain Black WT041",
+  "Dark Walnut WT112",
+  "Charcoal WT115",
+  "Light Grey WT114",
+  "Oak Brown WT130",
+  "Black Marble WT164",
+  "Cream WT082",
+  "Light Brown WT061",
+];
 
 const wallpaperCodes = [
   "09C9702", "09C9701", "09C9703", "11C1001", "15C9002", "15C9003", "16C1101", "16C8002",
