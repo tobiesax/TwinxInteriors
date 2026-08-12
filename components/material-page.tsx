@@ -7,6 +7,7 @@ import { FlowButton } from "@/components/flow-button";
 import { SolidButton } from "@/components/solid-button";
 import { Lightbox } from "@/components/lightbox";
 import { BackHomeButton } from "@/components/back-home-button";
+import { BackToTopButton } from "@/components/back-to-top-button";
 
 type LightboxSource = "gallery" | "design" | "swatch" | null;
 
@@ -57,6 +58,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
   return (
     <div>
       <BackHomeButton />
+      <BackToTopButton />
 
       {/* Hero */}
       <section className="relative flex min-h-[56vh] items-end px-5 sm:px-8 lg:px-12 pb-[72px]">
