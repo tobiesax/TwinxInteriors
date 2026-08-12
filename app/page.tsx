@@ -9,11 +9,14 @@ import { Testimonials } from "@/components/home/testimonials";
 import { Reveal } from "@/components/reveal";
 import { FlowButton } from "@/components/flow-button";
 import { SolidButton } from "@/components/solid-button";
+import { BackToTopButton } from "@/components/back-to-top-button";
 import { processSteps } from "@/lib/home-content";
 
 export default function HomePage() {
   return (
     <div className="overflow-hidden bg-white">
+      <BackToTopButton />
+
       <Hero />
 
       <div className="relative z-10 -mt-5 flex justify-center lg:hidden">
