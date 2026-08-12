@@ -233,7 +233,7 @@ export function ContactForm() {
       <input name="wallSize" placeholder="Wall size (Height x Width)" className={inputClasses} />
       <textarea
         name="description"
-        placeholder="Give us a brief description of your wall"
+        placeholder="Give us a brief description of what you want done"
         rows={4}
         className={`${inputClasses} resize-y`}
       />

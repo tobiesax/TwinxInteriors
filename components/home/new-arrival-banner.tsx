@@ -28,7 +28,7 @@ export function NewArrivalBanner() {
             Grooved PVC Panels
           </h2>
           <p className="m-0 mb-7 max-w-[460px] text-[15px] leading-[1.7] text-white/90">
-            600mm × 2400mm grooved PVC panels in a bold, geometric asymmetric design. Available in black and brown.
+            600mm × 2400mm grooved PVC panels in a bold, geometric asymmetric design. Available in grey and brown.
           </p>
           <span className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-[3px] bg-white px-6 py-3 text-sm font-bold text-ink transition-colors duration-200 group-hover:bg-brand group-hover:text-white">
             Explore the Range →

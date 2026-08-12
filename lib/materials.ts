@@ -163,7 +163,7 @@ export const materials: MaterialData[] = [
         imageId: "aw-about-1",
         imageSrc: "/uploads/aw-about-vertical-slat-divider.jpg",
         paragraphs: [
-          "The accent wall is back, not just indoors, but outdoors too, shaped into an endless range of forms and colours that give a flat wall real dimension and depth.",
+          "The accent wall is back, shaped into an endless range of forms and colours that give a flat wall real dimension and depth.",
           "It's found favour again with households and businesses alike, as an easy way to bring an extra layer of style and personality into a space.",
           "The real draw is versatility: an accent wall can be shaped almost any way you can imagine, which is exactly why it's become the first choice for homeowners and businesses wanting something that feels considered, not off-the-shelf.",
         ],
@@ -197,7 +197,7 @@ export const materials: MaterialData[] = [
       imageSrc: "/uploads/cnc-fluted-panel-new-arrival.jpg",
       paragraphs: [
         "600mm × 2400mm grooved PVC panels with a bold, geometric line pattern that breaks up a flat wall with real asymmetry — no two panel runs read the same.",
-        "Available in two colourways: WTCNC2 (brown) and WTCNC3 (black), both finished with the same natural wood-grain texture as the rest of our fluted panel range.",
+        "Available in two colourways: WTCNC2 (brown) and WTCNC3 (grey), both finished with the same natural wood-grain texture as the rest of our fluted panel range.",
       ],
       supportingImages: [
         {
@@ -209,7 +209,7 @@ export const materials: MaterialData[] = [
         {
           id: "cnc-card-2",
           title: "Two Colourways",
-          desc: "WTCNC2 (brown) and WTCNC3 (black) — both 600mm × 2400mm panels.",
+          desc: "WTCNC2 (brown) and WTCNC3 (grey) — both 600mm × 2400mm panels.",
           src: "/uploads/cnc-fluted-panel-swatches.jpg",
         },
         {
@@ -246,7 +246,6 @@ export const materials: MaterialData[] = [
         paragraphs: [
           "Linear, fluted panels made of engineered composites with a natural wood finish — the look and texture of real wood, without the upkeep.",
           "Water & moisture resistant — repels water, termites and mould, with none of the maintenance real wood needs.",
-          "Sized to fit — each panel measures 17cm × 2.9m, in a range of colours, or paint to match any palette.",
           "Works anywhere — a bedroom feature wall, a statement living room panel, or a reception that leaves a first impression.",
           "Suits any style — at home in minimalist, contemporary and Scandinavian interiors alike, from a home office to a boutique hotel.",
         ],
@@ -315,7 +314,6 @@ export const materials: MaterialData[] = [
         imageSrc: "/uploads/catalogue-wallpaper-1.jpg",
         paragraphs: [
           "We keep full wallpaper sample books — see and feel every design before you decide. Browse the complete range at either studio, or ask us to bring the sample books to your consultation and select from actual samples in your own space and light.",
-          "Consultation fee: R400 within Gauteng.",
           "Contact Kenny on 012 004 0919 or 084 672 7415 (call or WhatsApp) to book.",
         ],
       },

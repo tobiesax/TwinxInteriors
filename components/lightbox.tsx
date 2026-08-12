@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 export type LightboxItem = { id: string; label: string; src: string; detail?: string };
 
@@ -17,7 +19,12 @@ export function Lightbox({
   onNext?: () => void;
   heightClass?: string;
 }) {
-  return (
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const lightbox = (
     <div
       onClick={onClose}
       className="fixed inset-0 z-[200] flex items-center justify-center bg-[rgba(20,18,16,0.92)] p-12"
@@ -25,9 +32,11 @@ export function Lightbox({
       <button
         onClick={onClose}
         aria-label="Close"
-        className="absolute right-8 top-7 cursor-pointer border-none bg-transparent text-3xl leading-none text-white"
+        className="absolute right-6 top-6 z-10 flex h-11 w-11 items-center justify-center rounded-full border-none bg-white/20 text-white transition-colors duration-200 hover:bg-white/30"
       >
-        ×
+        <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L17 17M17 1L1 17" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+        </svg>
       </button>
       {onPrev && (
         <button
@@ -36,7 +45,7 @@ export function Lightbox({
             onPrev();
           }}
           aria-label="Previous"
-          className="absolute left-6 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border-none bg-white/[0.12] text-xl text-white transition-colors duration-200 hover:bg-white/[0.24]"
+          className="absolute left-6 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border-none bg-white/[0.12] text-xl text-white transition-colors duration-200 hover:bg-white/[0.24]"
         >
           ‹
         </button>
@@ -48,7 +57,7 @@ export function Lightbox({
             onNext();
           }}
           aria-label="Next"
-          className="absolute right-6 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border-none bg-white/[0.12] text-xl text-white transition-colors duration-200 hover:bg-white/[0.24]"
+          className="absolute right-6 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border-none bg-white/[0.12] text-xl text-white transition-colors duration-200 hover:bg-white/[0.24]"
         >
           ›
         </button>
@@ -66,4 +75,7 @@ export function Lightbox({
       </div>
     </div>
   );
+
+  if (!mounted) return null;
+  return createPortal(lightbox, document.body);
 }
