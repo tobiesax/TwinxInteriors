@@ -3,6 +3,8 @@ import { PortfolioGallery } from "@/components/portfolio-gallery";
 import { SolidButton } from "@/components/solid-button";
 import { BackHomeButton } from "@/components/back-home-button";
 import { BackToTopButton } from "@/components/back-to-top-button";
+import { client } from "@/tina/__generated__/client";
+import type { PortfolioCategory } from "@/lib/portfolio-content";
 
 export const metadata: Metadata = {
   title: "Portfolio — Real Installs Across South Africa",
@@ -13,7 +15,36 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PortfolioPage() {
+async function getPortfolioCategories(): Promise<PortfolioCategory[]> {
+  const [featureWalls, closets, mediaWalls, hallways] = await Promise.all([
+    client.queries.portfolioFeatureWalls({ relativePath: "feature-walls.json" }),
+    client.queries.portfolioClosets({ relativePath: "closets.json" }),
+    client.queries.portfolioMediaWalls({ relativePath: "media-walls.json" }),
+    client.queries.portfolioHallways({ relativePath: "hallways.json" }),
+  ]);
+
+  const toCategory = (
+    key: string,
+    doc: { heading?: string | null; items?: ({ label?: string | null; src?: string | null } | null)[] | null }
+  ): PortfolioCategory => ({
+    key,
+    heading: doc.heading ?? "",
+    items: (doc.items ?? []).flatMap((item, index) =>
+      item ? [{ id: `${key}-${index}`, label: item.label ?? "", src: item.src ?? "" }] : []
+    ),
+  });
+
+  return [
+    toCategory("feature-walls", featureWalls.data.portfolioFeatureWalls),
+    toCategory("closets", closets.data.portfolioClosets),
+    toCategory("media-walls", mediaWalls.data.portfolioMediaWalls),
+    toCategory("hallways", hallways.data.portfolioHallways),
+  ];
+}
+
+export default async function PortfolioPage() {
+  const categories = await getPortfolioCategories();
+
   return (
     <div className="bg-white">
       <BackHomeButton />
@@ -33,7 +64,7 @@ export default function PortfolioPage() {
         </p>
       </section>
 
-      <PortfolioGallery />
+      <PortfolioGallery categories={categories} />
 
       <section className="w-full bg-cream px-5 sm:px-8 lg:px-12 py-16 lg:py-[120px] text-center">
         <h2 className="m-0 mb-8 font-jost text-[clamp(28px,4vw,42px)] font-light uppercase text-ink">

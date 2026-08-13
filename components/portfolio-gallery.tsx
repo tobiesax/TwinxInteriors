@@ -2,19 +2,18 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { portfolioCategories } from "@/lib/portfolio-content";
+import type { PortfolioCategory } from "@/lib/portfolio-content";
 import { Lightbox } from "@/components/lightbox";
 
-const allItems = portfolioCategories.flatMap((cat) => cat.items);
-
-export function PortfolioGallery() {
+export function PortfolioGallery({ categories }: { categories: PortfolioCategory[] }) {
+  const allItems = categories.flatMap((cat) => cat.items);
   const [activeId, setActiveId] = useState<string | null>(null);
   const activeIndex = allItems.findIndex((it) => it.id === activeId);
   const activeItem = activeIndex >= 0 ? allItems[activeIndex] : null;
 
   return (
     <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pb-10">
-      {portfolioCategories.map((cat) => (
+      {categories.map((cat) => (
         <div key={cat.key} className="mb-20 last:mb-0">
           <div className="mb-10 flex items-center gap-2.5">
             <span className="h-px w-7 bg-brand" />
