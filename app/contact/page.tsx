@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact — Get a Quote in Pretoria or Durban",
+  title: "Contact — Get a Quote Anywhere in South Africa",
   description:
-    "Request a quote for wall moulding, accent walls, PVC panelling, wallpaper, kitchen cabinetry or PU stone cladding. Twinx Interiors studios in Pretoria and Durban.",
+    "Request a quote for wall moulding, accent walls, PVC panelling, wallpaper, kitchen cabinetry or PU stone cladding. Twinx Interiors, serving South Africa.",
   alternates: {
     canonical: "/contact",
   },

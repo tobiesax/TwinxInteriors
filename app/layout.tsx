@@ -25,37 +25,37 @@ const ogImage = "/uploads/catalogue-wallframe-4.jpg";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in Pretoria & Durban",
-    template: "%s | Twinx Interiors — Pretoria & Durban",
+    default: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in South Africa",
+    template: "%s | Twinx Interiors — South Africa",
   },
   description:
-    "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across Pretoria and Durban. Get a quote from Twinx Interiors.",
+    "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across South Africa. Get a quote from Twinx Interiors.",
   alternates: {
     canonical: "/",
   },
   keywords: [
-    "wall moulding Pretoria",
-    "accent wall installation Durban",
+    "wall moulding South Africa",
+    "accent wall installation South Africa",
     "PVC wall panels South Africa",
-    "wallpaper installation Pretoria",
-    "kitchen cabinetry Pretoria",
+    "wallpaper installation South Africa",
+    "kitchen cabinetry South Africa",
     "PU stone cladding South Africa",
     "interior wall decor South Africa",
   ],
   openGraph: {
     type: "website",
     siteName: "Twinx Interiors",
-    title: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in Pretoria & Durban",
+    title: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in South Africa",
     description:
-      "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across Pretoria and Durban.",
+      "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across South Africa.",
     images: [{ url: ogImage, width: 1200, height: 900 }],
     locale: "en_ZA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in Pretoria & Durban",
+    title: "Twinx Interiors — Wall Moulding, Accent Walls & Cabinetry in South Africa",
     description:
-      "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across Pretoria and Durban.",
+      "Wall moulding, accent walls, PVC panelling, wallpaper, custom kitchen cabinetry and PU stone cladding, installed across South Africa.",
     images: [ogImage],
   },
 };

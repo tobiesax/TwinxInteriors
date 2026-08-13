@@ -11,7 +11,7 @@ export async function generateMetadata(props: PageProps<"/materials/[slug]">): P
   const { slug } = await props.params;
   const data = getMaterial(slug);
   if (!data) return {};
-  const title = `${data.title} — Pretoria & Durban`;
+  const title = `${data.title} — South Africa`;
   return {
     title,
     description: data.description,
