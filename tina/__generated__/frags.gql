@@ -1,0 +1,39 @@
+fragment PortfolioFeatureWallsParts on PortfolioFeatureWalls {
+  __typename
+  heading
+  items {
+    __typename
+    label
+    src
+  }
+}
+
+fragment PortfolioClosetsParts on PortfolioClosets {
+  __typename
+  heading
+  items {
+    __typename
+    label
+    src
+  }
+}
+
+fragment PortfolioMediaWallsParts on PortfolioMediaWalls {
+  __typename
+  heading
+  items {
+    __typename
+    label
+    src
+  }
+}
+
+fragment PortfolioHallwaysParts on PortfolioHallways {
+  __typename
+  heading
+  items {
+    __typename
+    label
+    src
+  }
+}

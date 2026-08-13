@@ -1,0 +1,219 @@
+query portfolioFeatureWalls($relativePath: String!) {
+  portfolioFeatureWalls(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PortfolioFeatureWallsParts
+  }
+}
+
+query portfolioFeatureWallsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PortfolioFeatureWallsFilter) {
+  portfolioFeatureWallsConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...PortfolioFeatureWallsParts
+      }
+    }
+  }
+}
+
+query portfolioClosets($relativePath: String!) {
+  portfolioClosets(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PortfolioClosetsParts
+  }
+}
+
+query portfolioClosetsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PortfolioClosetsFilter) {
+  portfolioClosetsConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...PortfolioClosetsParts
+      }
+    }
+  }
+}
+
+query portfolioMediaWalls($relativePath: String!) {
+  portfolioMediaWalls(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PortfolioMediaWallsParts
+  }
+}
+
+query portfolioMediaWallsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PortfolioMediaWallsFilter) {
+  portfolioMediaWallsConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...PortfolioMediaWallsParts
+      }
+    }
+  }
+}
+
+query portfolioHallways($relativePath: String!) {
+  portfolioHallways(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PortfolioHallwaysParts
+  }
+}
+
+query portfolioHallwaysConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PortfolioHallwaysFilter) {
+  portfolioHallwaysConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...PortfolioHallwaysParts
+      }
+    }
+  }
+}
