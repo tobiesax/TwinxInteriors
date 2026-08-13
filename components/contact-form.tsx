@@ -1,7 +1,10 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useState } from "react";
+import Script from "next/script";
 import { submitQuoteRequest, type SubmitQuoteState } from "@/app/contact/actions";
+
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 const pvcColors = [
   "Black W61",
@@ -34,6 +37,11 @@ const initialState: SubmitQuoteState = { status: "idle" };
 
 export function ContactForm() {
   const [state, formAction, pending] = useActionState(submitQuoteRequest, initialState);
+  const [renderedAt, setRenderedAt] = useState<number | null>(null);
+
+  useEffect(() => {
+    setRenderedAt(Date.now());
+  }, []);
 
   if (state.status === "success") {
     return (
@@ -261,6 +269,15 @@ export function ContactForm() {
         aria-hidden="true"
         className="hidden"
       />
+      <input type="hidden" name="form-rendered-at" value={renderedAt ?? ""} />
+
+      {TURNSTILE_SITE_KEY && (
+        <>
+          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
+          <div className="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} />
+        </>
+      )}
+
       <button
         type="submit"
         disabled={pending}

@@ -4,6 +4,10 @@ import { Resend } from "resend";
 
 const TO_EMAIL = "Info@twinxinteriors.co.za";
 
+// Real visitors can't fill and submit the form faster than this; bots that skip
+// the honeypot often still submit near-instantly.
+const MIN_SUBMIT_MS = 2000;
+
 export type SubmitQuoteState = {
   status: "idle" | "success" | "error";
   message?: string;
@@ -25,6 +29,37 @@ export async function submitQuoteRequest(
   if (formData.get("hp-field")) {
     console.warn("Contact form honeypot triggered — submission blocked without sending email.");
     return { status: "success" };
+  }
+
+  // Time-trap: the field is stamped client-side after the form actually mounts in
+  // the browser, so a missing/invalid value means whatever submitted skipped JS entirely.
+  const renderedAt = Number(formData.get("form-rendered-at"));
+  if (!renderedAt || Date.now() - renderedAt < MIN_SUBMIT_MS) {
+    console.warn("Contact form time-trap triggered — submission blocked without sending email.");
+    return { status: "success" };
+  }
+
+  const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+  if (turnstileSecret) {
+    const turnstileToken = String(formData.get("cf-turnstile-response") || "");
+    if (!turnstileToken) {
+      return { status: "error", message: "Please complete the verification check and try again." };
+    }
+    try {
+      const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ secret: turnstileSecret, response: turnstileToken }),
+      });
+      const verifyData = await verifyRes.json();
+      if (!verifyData.success) {
+        console.warn("Turnstile verification failed:", verifyData["error-codes"]);
+        return { status: "error", message: "Verification failed — please try submitting again." };
+      }
+    } catch (err) {
+      console.error("Turnstile verification request failed:", err);
+      return { status: "error", message: "Something went wrong verifying your request. Please try again." };
+    }
   }
 
   const firstName = String(formData.get("firstName") || "").trim();
