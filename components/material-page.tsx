@@ -210,7 +210,23 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             <p className="m-0 mb-10 max-w-[640px] text-[17px] leading-[1.8] text-muted">{data.process.intro}</p>
           )}
 
-          <div className="flex flex-wrap items-center gap-x-1 gap-y-4">
+          {/* Mobile: vertical numbered list */}
+          <ol className="flex flex-col sm:hidden">
+            {data.process.steps.map((step, i) => (
+              <li
+                key={step}
+                className="flex items-center gap-4 border-b border-black/[0.08] py-4 first:pt-0 last:border-b-0"
+              >
+                <span className="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-brand/10 text-[12px] font-bold text-brand">
+                  {i + 1}
+                </span>
+                <span className="text-[13px] font-bold uppercase tracking-[0.04em] text-ink">{step}</span>
+              </li>
+            ))}
+          </ol>
+
+          {/* Tablet/desktop: wrapping arrow chain */}
+          <div className="hidden flex-wrap items-center gap-x-1 gap-y-4 sm:flex">
             {data.process.steps.map((step, i) => (
               <div key={step} className="flex items-center gap-1">
                 <span className="flex items-center gap-2 whitespace-nowrap rounded-full border border-black/[0.14] px-4 py-2.5 text-[12px] font-bold uppercase tracking-[0.04em] text-ink">
