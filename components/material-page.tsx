@@ -196,6 +196,47 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
         </section>
       )}
 
+      {/* Process */}
+      {data.process && (
+        <section className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12 pt-24">
+          <div className="mb-5 flex items-center gap-2.5">
+            <span className="h-px w-7 bg-brand" />
+            <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">{data.process.eyebrow}</span>
+          </div>
+          <h2 className="m-0 mb-6 max-w-[720px] font-jost text-[clamp(30px,4vw,46px)] font-light uppercase leading-[1.1] text-ink">
+            {data.process.heading}
+          </h2>
+          {data.process.intro && (
+            <p className="m-0 mb-10 max-w-[640px] text-[17px] leading-[1.8] text-muted">{data.process.intro}</p>
+          )}
+
+          <div className="flex flex-wrap items-center gap-x-1 gap-y-4">
+            {data.process.steps.map((step, i) => (
+              <div key={step} className="flex items-center gap-1">
+                <span className="flex items-center gap-2 whitespace-nowrap rounded-full border border-black/[0.14] px-4 py-2.5 text-[12px] font-bold uppercase tracking-[0.04em] text-ink">
+                  <span className="text-brand">{String(i + 1).padStart(2, "0")}</span>
+                  {step}
+                </span>
+                {i < data.process!.steps.length - 1 && (
+                  <span aria-hidden className="px-1 text-brand">
+                    →
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-14 rounded-[3px] bg-cream p-8 sm:p-10">
+            <div className="mb-3 text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
+              {data.process.promiseHeading ?? "Our Promise"}
+            </div>
+            <p className="m-0 max-w-[820px] font-jost text-[clamp(20px,2.6vw,28px)] font-light leading-[1.4] text-ink">
+              {data.process.promiseText}
+            </p>
+          </div>
+        </section>
+      )}
+
       {lightboxItem && (
         <Lightbox
           item={{ id: lightboxItem.id, label: lightboxLabel, src: lightboxItem.src, detail: lightboxDetail }}

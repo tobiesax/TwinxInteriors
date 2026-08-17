@@ -17,6 +17,14 @@ export type SpotlightSection = {
   imageSrc: string;
   supportingImages?: StyleCard[];
 };
+export type ProcessSection = {
+  eyebrow: string;
+  heading: string;
+  intro?: string;
+  steps: string[];
+  promiseHeading?: string;
+  promiseText: string;
+};
 
 export type MaterialData = {
   slug: string;
@@ -34,6 +42,7 @@ export type MaterialData = {
   galleryEyebrow?: string;
   galleryHeading?: string;
   galleryTagline?: string;
+  process?: ProcessSection;
   designCards?: StyleCard[];
   designCardsEyebrow?: string;
   designCardsHeading?: string;
@@ -372,6 +381,32 @@ export const materials: MaterialData[] = [
     galleryEyebrow: "Gallery",
     galleryHeading: "Kitchen units in place",
     galleryTagline: "Kitchens, bars, wardrobes and media walls",
+    process: {
+      eyebrow: "How We Work",
+      heading: "The Twinx Interiors Journey",
+      intro:
+        "At Twinx Interiors, we believe a successful kitchen or cabinetry project is not just about beautiful design — it's about a structured process that takes you from the first consultation through to professional installation and final handover.",
+      steps: [
+        "Consultation",
+        "On Site Meeting & Measurement",
+        "Material Selection",
+        "3D Render",
+        "Approval",
+        "Quotation",
+        "Deposit",
+        "Production",
+        "Site Preparation",
+        "Delivery",
+        "Installation",
+        "Quality Check",
+        "Snagging",
+        "Final Corrections",
+        "Sign-Off & Handover",
+      ],
+      promiseHeading: "Our Promise",
+      promiseText:
+        "We don't just install cabinetry. We manage the entire journey — from concept to completion — to ensure that every detail is designed, manufactured, installed and finished to the Twinx Interiors standard.",
+    },
     gallery: [
       { id: "ku-1", label: "Home bar cabinetry with backlit shelving", src: "/uploads/ku-home-bar.jpg" },
       { id: "ku-2", label: "Matte grey cabinetry with open shelving", src: "/uploads/minimalist-kitchen-interior-design-2.jpg" },
