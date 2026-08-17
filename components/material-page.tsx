@@ -225,19 +225,19 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
             ))}
           </ol>
 
-          {/* Tablet/desktop: wrapping arrow chain */}
-          <div className="hidden flex-wrap items-center gap-x-1 gap-y-4 sm:flex">
+          {/* Tablet/desktop: numbered grid */}
+          <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
             {data.process.steps.map((step, i) => (
-              <div key={step} className="flex items-center gap-1">
-                <span className="flex items-center gap-2 whitespace-nowrap rounded-full border border-black/[0.14] px-4 py-2.5 text-[12px] font-bold uppercase tracking-[0.04em] text-ink">
-                  <span className="text-brand">{String(i + 1).padStart(2, "0")}</span>
+              <div
+                key={step}
+                className="flex flex-col gap-3 rounded-[3px] border border-black/[0.1] p-5 transition-colors duration-200 hover:border-brand/40"
+              >
+                <span className="font-jost text-[26px] font-light leading-none text-brand">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[12.5px] font-bold uppercase leading-snug tracking-[0.04em] text-ink">
                   {step}
                 </span>
-                {i < data.process!.steps.length - 1 && (
-                  <span aria-hidden className="px-1 text-brand">
-                    →
-                  </span>
-                )}
               </div>
             ))}
           </div>
