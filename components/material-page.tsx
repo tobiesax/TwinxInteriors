@@ -214,13 +214,16 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           <ol className="flex flex-col sm:hidden">
             {data.process.steps.map((step, i) => (
               <li
-                key={step}
-                className="flex items-center gap-4 border-b border-black/[0.08] py-4 first:pt-0 last:border-b-0"
+                key={step.title}
+                className="flex items-start gap-4 border-b border-black/[0.08] py-4 first:pt-0 last:border-b-0"
               >
                 <span className="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-brand/10 text-[12px] font-bold text-brand">
                   {i + 1}
                 </span>
-                <span className="text-[13px] font-bold uppercase tracking-[0.04em] text-ink">{step}</span>
+                <span className="flex flex-col gap-1">
+                  <span className="text-[13px] font-bold uppercase tracking-[0.04em] text-ink">{step.title}</span>
+                  <span className="text-[13px] leading-snug text-muted">{step.desc}</span>
+                </span>
               </li>
             ))}
           </ol>
@@ -229,15 +232,16 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
             {data.process.steps.map((step, i) => (
               <div
-                key={step}
+                key={step.title}
                 className="flex flex-col gap-3 rounded-[3px] border border-black/[0.1] p-5 transition-colors duration-200 hover:border-brand/40"
               >
                 <span className="font-jost text-[26px] font-light leading-none text-brand">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-[12.5px] font-bold uppercase leading-snug tracking-[0.04em] text-ink">
-                  {step}
+                  {step.title}
                 </span>
+                <span className="text-[12.5px] leading-snug text-muted">{step.desc}</span>
               </div>
             ))}
           </div>
