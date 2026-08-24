@@ -18,8 +18,8 @@ export type ProcessStep = { n: string; title: string; desc: string };
 export const processSteps: ProcessStep[] = [
   {
     n: "01",
-    title: "On-Site Consultation",
-    desc: "Our process begins with a comprehensive on-site consultation, where we meet with the client to gain a clear understanding of their vision, requirements, and project objectives. During this visit, we take accurate measurements, assess the space, and present relevant material and finish samples to help guide the design direction.",
+    title: "Consultation and Quotation",
+    desc: "Our process begins with a comprehensive on-site consultation, where we meet with the client to gain a clear understanding of their vision, requirements, and project objectives. During this visit, we take accurate measurements, assess the space, and present relevant material and finish samples to help guide the design direction. Once the project scope and design requirements have been finalized, we prepare and submit a detailed quotation outlining the agreed specifications, scope of work, and associated costs.",
   },
   {
     n: "02",
@@ -28,18 +28,18 @@ export const processSteps: ProcessStep[] = [
   },
   {
     n: "03",
-    title: "Quotation",
-    desc: "Once the project scope and design requirements have been finalized, we prepare and submit a detailed quotation outlining the agreed specifications, scope of work, and associated costs.",
-  },
-  {
-    n: "04",
     title: "On-Site Installation",
     desc: "Upon approval of the quotation, our experienced installation team carries out the project with precision, professionalism, and meticulous attention to detail, ensuring the highest standards of workmanship throughout the installation process.",
   },
   {
+    n: "04",
+    title: "Quality Check and Snagging",
+    desc: "Following completion of the installation, our team conducts a thorough quality inspection, identifying and resolving any outstanding snags to ensure every aspect of the project meets our stringent quality standards.",
+  },
+  {
     n: "05",
-    title: "Quality Inspection and Project Sign-Off",
-    desc: "Following completion of the installation, a thorough quality inspection is conducted to ensure every aspect of the project meets our stringent quality standards and the client's expectations. The project is then formally signed off once the client is fully satisfied with the final outcome.",
+    title: "Sign-Off and Handover",
+    desc: "Once every detail meets our standards and the client's expectations, the project is formally signed off and handed over, complete and ready to enjoy.",
   },
 ];
 
