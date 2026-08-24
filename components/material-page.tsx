@@ -229,7 +229,7 @@ export function MaterialPageTemplate({ data }: { data: MaterialData }) {
           </ol>
 
           {/* Tablet/desktop: numbered grid */}
-          <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
+          <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4">
             {data.process.steps.map((step, i) => (
               <div
                 key={step.title}
