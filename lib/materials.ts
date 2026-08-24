@@ -388,21 +388,30 @@ export const materials: MaterialData[] = [
       intro:
         "At Twinx Interiors, we believe a successful kitchen or cabinetry project is not just about beautiful design — it's about a structured process that takes you from the first consultation through to professional installation and final handover.",
       steps: [
-        { title: "Consultation", desc: "An initial discussion to understand your vision, needs and budget." },
-        { title: "On Site Meeting & Measurement", desc: "We visit your space to take accurate measurements and assess the layout." },
-        { title: "Material Selection", desc: "Choose finishes, colours and hardware from our sample range." },
-        { title: "3D Render", desc: "A visual design of your kitchen or cabinetry before production begins." },
-        { title: "Approval", desc: "You review and sign off on the final design." },
-        { title: "Quotation", desc: "A detailed quote covering scope, materials and cost." },
-        { title: "Deposit", desc: "A deposit secures your production slot." },
-        { title: "Production", desc: "Your units are manufactured to the approved specification." },
-        { title: "Site Preparation", desc: "The installation area is prepped ahead of delivery." },
-        { title: "Delivery", desc: "Finished units are delivered to site." },
-        { title: "Installation", desc: "Our team fits everything with precision and care." },
-        { title: "Quality Check", desc: "Every detail is checked against our standards." },
-        { title: "Snagging", desc: "Any outstanding items are identified and listed." },
-        { title: "Final Corrections", desc: "Snags are resolved before hand-over." },
-        { title: "Sign-Off & Handover", desc: "You confirm you're satisfied, and the project is complete." },
+        {
+          title: "Consultation",
+          desc: "An onsite meeting to understand your vision and needs, take accurate measurements, and select finishes, colours and hardware from our sample range.",
+        },
+        {
+          title: "3D Render (Optional)",
+          desc: "A visual design of your kitchen or cabinetry before production begins, so you can review and approve the final look.",
+        },
+        {
+          title: "Quotation",
+          desc: "A detailed quote covering scope, materials and cost, followed by a deposit to secure your production slot.",
+        },
+        {
+          title: "Installation",
+          desc: "Your units are manufactured, delivered and fitted on site with precision and care.",
+        },
+        {
+          title: "Quality Check and Snagging",
+          desc: "Every detail is checked against our standards, and any outstanding items are identified and resolved.",
+        },
+        {
+          title: "Sign-Off and Handover",
+          desc: "You confirm you're satisfied, and the project is complete.",
+        },
       ],
       promiseHeading: "Our Promise",
       promiseText:
