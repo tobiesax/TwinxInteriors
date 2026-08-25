@@ -2,15 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // Tina Cloud resolves `image` fields (e.g. portfolio photos) to its own asset
-    // CDN rather than passing through the plain /uploads/* path stored in content —
-    // next/image's optimizer blocks any remote host that isn't explicitly allowed.
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "assets.tina.io",
-      },
-    ],
+    // Vercel's Image Optimization API (/_next/image) has a monthly quota on the
+    // Hobby plan; once exceeded it returns 402 and every optimized image breaks
+    // site-wide. Serve images unoptimized (no resize/format conversion) instead.
+    unoptimized: true,
   },
 };
 
